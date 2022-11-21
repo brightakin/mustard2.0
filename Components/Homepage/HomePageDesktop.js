@@ -102,7 +102,7 @@ const HomePageDesktop = () => {
               alt="bigcircle"
             />
             <Image
-              className="absolute h-[25rem] w-[25rem] left-[12rem]"
+              className="absolute z-20 h-[25rem] w-[25rem] left-[12rem]"
               src={pointerLineImg}
               alt="pointerline"
             />
