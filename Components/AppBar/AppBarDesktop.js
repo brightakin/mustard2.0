@@ -26,9 +26,9 @@ const AppBarDesktop = () => {
   }, []);
 
   return (
-    <div className="h-[80px]">
+    <div className="h-[80px] w-full">
       <div
-        className={`h-[80px] flex justify-around gap-[20rem] pr-10 transition-all ease-in-out delay-1000 z-30 w-full bg-[#000000] ${
+        className={`h-[80px] flex justify-around gap-[5rem] pr-10 transition-all ease-in-out delay-1000 z-30 w-full bg-[#000000] ${
           scrolled ? "fixed" : ""
         }`}
       >
@@ -44,7 +44,7 @@ const AppBarDesktop = () => {
             <a href="/">Pricing</a>
           </li>
         </ul>
-        <div className="flex justify-around mt-3 gap-[1rem]">
+        <div className="flex justify-around mt-3 gap-5">
           <button
             onClick={loginHandler}
             className="w-32 h-14 rounded-[10px] hover:scale-105 duration-500 border-2 border-[#3a3a3a] bg-black text-[14px] font-bold text-[#f8f7fa] "

@@ -56,9 +56,9 @@ const HomePageDesktop = () => {
         </p>
       </div>
       <div className="flex justify-center gap-[5rem] p-[1rem]" layout="fill">
-        <Image className=" w-28 h-8" src={patriciaImg} alt="patriciaImg" />
-        <Image className=" w-28 h-8" src={obiexImg} alt="obiexImg" />
-        <Image className=" w-28 h-8" src={carbonImg} alt="carbonImg" />
+        <Image className=" w-24 h-8" src={patriciaImg} alt="patriciaImg" />
+        <Image className=" w-24 h-8" src={obiexImg} alt="obiexImg" />
+        <Image className=" w-24 h-8" src={carbonImg} alt="carbonImg" />
       </div>
       <div className="w-full pt-10 h-[75rem] bg-[#f8f7fa]">
         <div className="flex justify-between">
@@ -182,7 +182,7 @@ const HomePageDesktop = () => {
             />
           </div>
         </div>
-        <div className="flex mt-[6rem] gap-[18rem] justify-center">
+        <div className="flex mt-[6rem] gap-[5rem] justify-center">
           <div className="w-[30rem] h-[16rem] border-2 border-[#a6a6aa] rounded-xl">
             <Image
               className=" w-10 h-10 mt-[3rem] mx-auto"
@@ -211,7 +211,7 @@ const HomePageDesktop = () => {
             </p>
           </div>
         </div>
-        <div className="w-[30rem] mt-[6rem] mx-auto h-[16rem] border-2 border-[#a6a6aa] rounded-xl">
+        <div className="w-[30rem] mt-[4rem] mx-auto h-[16rem] border-2 border-[#a6a6aa] rounded-xl">
           {" "}
           <Image
             className="mt-[3rem] mx-auto w-10 h-10"
@@ -281,50 +281,50 @@ const HomePageDesktop = () => {
           </form>
         </div>
       </div>
-      <div className="h-[30rem] w-full flex gap-[4rem] px-28  bg-gradient-to-r from-[#93939c] via-transparent">
+      <div className="h-[30rem] w-full flex pl-5 justify-start  bg-gradient-to-r from-[#93939c] via-transparent">
         <div className="mt-[10rem]">
-          <p className="h-10 w-40 text-2xl text-left text-[#000000] font-bold ">
+          <p className="h-10 w-40 text-xl text-left text-[#000000] font-bold ">
             Products
           </p>
-          <p className="h-10 w-72 text-2xl text-left text-[#3a3a3a] font-bold ">
+          <p className="h-10 w-72 text-lg text-left text-[#3a3a3a] font-bold ">
             Virtual Dollar Cards
           </p>
-          <p className="h-10 w-72 text-2xl text-left text-[#3a3a3a] font-bold ">
+          <p className="h-10 w-72 text-lg text-left text-[#3a3a3a] font-bold ">
             Dedicated User Account
           </p>
-          <p className="h-10 w-40 text-2xl text-left text-[#3a3a3a] font-bold ">
+          <p className="h-10 w-40 text-lg text-left text-[#3a3a3a] font-bold ">
             Docs
           </p>
-          <p className="h-10 w-40 text-2xl text-left text-[#3a3a3a] font-bold ">
+          <p className="h-10 w-40 text-lg text-left text-[#3a3a3a] font-bold ">
             Metrics
           </p>
         </div>
         <div className="mt-[10rem]">
-          <p className="h-[43px] w-[206px] text-2xl text-left text-[#000000] font-bold ">
+          <p className="h-[43px] w-[206px] text-xl text-left text-[#000000] font-bold ">
             Resources
           </p>
-          <p className="h-10 w-40 text-2xl text-left text-[#3a3a3a] font-bold ">
+          <p className="h-10 w-40 text-lg text-left text-[#3a3a3a] font-bold ">
             Pricing
           </p>
-          <p className="h-10 w-72 text-2xl text-left text-[#3a3a3a] font-bold ">
+          <p className="h-10 w-72 text-lg text-left text-[#3a3a3a] font-bold ">
             Customer Stories
           </p>
-          <p className="h-10 w-40 text-2xl text-left text-[#3a3a3a] font-bold ">
+          <p className="h-10 w-40 text-lg text-left text-[#3a3a3a] font-bold ">
             Zenfin Docs
           </p>
         </div>
         <div className="mt-[10rem]">
-          <p className="h-[43px] w-[206px] text-2xl text-left text-[#000000] font-bold ">
+          <p className="h-[43px] w-[206px] text-xl text-left text-[#000000] font-bold ">
             Company
           </p>
-          <p className="h-10 w-40 text-2xl text-left text-[#3a3a3a] font-bold ">
+          <p className="h-10 w-40 text-lg text-left text-[#3a3a3a] font-bold ">
             Team
           </p>
-          <p className="h-10 w-72 text-2xl text-left text-[#3a3a3a] font-bold ">
+          <p className="h-10 w-72 text-lg text-left text-[#3a3a3a] font-bold ">
             Career Support
           </p>{" "}
           <a
-            className="h-10 w-72 text-2xl text-left text-[#3a3a3a] font-bold "
+            className="h-10 w-72 text-lg text-left text-[#3a3a3a] font-bold "
             href="/contactus"
           >
             Contact Support
