@@ -50,16 +50,6 @@ const HomePageDesktop = () => {
           </div>
         </div>
       </div>
-      <div className="w-full bg-[#ffffff]">
-        <p className=" w-[60rem] h-10 text-[#fdbc1f] text-2xl text-center mt-4 mx-auto">
-          Trusted by more than 300 Leading Fintechs in Africa
-        </p>
-      </div>
-      <div className="flex justify-center gap-[5rem] p-[1rem]" layout="fill">
-        <Image className=" w-24 h-8" src={patriciaImg} alt="patriciaImg" />
-        <Image className=" w-24 h-8" src={obiexImg} alt="obiexImg" />
-        <Image className=" w-24 h-8" src={carbonImg} alt="carbonImg" />
-      </div>
       <div className="w-full pt-10 h-[75rem] bg-[#f8f7fa]">
         <div className="flex justify-between">
           <div>
@@ -104,7 +94,7 @@ const HomePageDesktop = () => {
             </div>
           </div>
         </div>
-        <div className="flex mt-[3rem]">
+        <div className="flex justify-between mr-28 mt-[3rem]">
           <div>
             <Image
               className="absolute h-[30rem] w-[30rem] left-[2rem]"
@@ -118,7 +108,7 @@ const HomePageDesktop = () => {
             />
           </div>
           <div>
-            <div className="flex absolute left-[41rem] w-[36rem] rounded-xl mr-10 h-56 bg-[#ffffff]">
+            <div className="flex w-[36rem] rounded-xl h-56 bg-[#ffffff]">
               <Image className="h-48 w-60" src={atmImg} alt="card" />
               <div className="mt-10">
                 <p className="w-full h-8 text-xl font-bold text-[#3a3a3a] ">
@@ -131,7 +121,7 @@ const HomePageDesktop = () => {
                 </p>
               </div>
             </div>
-            <div className="flex z-10 top-[103rem] left-[41rem] absolute w-[36rem] rounded-xl mr-10 h-56 bg-[#ffffff]">
+            <div className="flex absolute z-10 w-[36rem] mt-[3rem] rounded-xl mr-10 h-56 bg-[#ffffff]">
               <Image className="h-48 w-60" src={apiImg} alt="card" />
               <div className="mt-10">
                 <p className="w-56 h-8 text-xl font-bold text-[#3a3a3a] ">
@@ -147,7 +137,7 @@ const HomePageDesktop = () => {
           </div>
         </div>
         <Image
-          className="absolute top-[104rem] right-0"
+          className="ml-[60rem] relative mt-[4.4rem]"
           src={cutCircleImg}
           alt="cutcircle"
         />
@@ -245,7 +235,7 @@ const HomePageDesktop = () => {
             <p className="h-8 w-40 text-lg text-[#a6a6aa]">Hanu, Patricia</p>
           </div>
         </div>
-        <div className="flex mt-[10rem]">
+        <div className="flex justify-center mt-[10rem]">
           <div>
             <hr className="bg-[rgb(253,188,31)] w-16 ml-12 h-[4px]" />
             <p className="w-[34rem] h-10 font-bold text-2xl ml-12 mt-10 text-left text-[#3a3a3a]">
