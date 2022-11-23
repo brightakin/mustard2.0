@@ -10,7 +10,7 @@ import UploadDocs from "../Helpers/UploadDocs";
 import { useState } from "react";
 import PersonalInfo from "../Helpers/PersonalInfo";
 import UploadPersonalDocs from "../Helpers/UploadPersonalDocs";
-import EndCompliance from "../Helpers/endCompliance";
+import EndCompliance from "../Helpers/EndCompliance";
 
 const DashboardDesktop = () => {
   const [SubmitBusinessInfo, setSubmitBusinessInfo] = useState(false);
