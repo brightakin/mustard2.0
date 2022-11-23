@@ -1,4 +1,4 @@
-const EndCompliance = () => {
+const FinishCompliance = () => {
   return (
     <div className=" w-[70rem] h-[43rem] mr-6 mt-5 bg-white rounded-3xl">
       <p className=" text-2xl w-40 h-6 font-bold mt-5 ml-7 text-[#3a3a3a]">
@@ -56,4 +56,4 @@ const EndCompliance = () => {
   );
 };
 
-export default EndCompliance;
+export default FinishCompliance;

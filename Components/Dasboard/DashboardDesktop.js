@@ -10,7 +10,7 @@ import UploadDocs from "../Helpers/UploadDocs";
 import { useState } from "react";
 import PersonalInfo from "../Helpers/PersonalInfo";
 import UploadPersonalDocs from "../Helpers/UploadPersonalDocs";
-import EndCompliance from "../Helpers/endCompliance";
+import FinishCompliance from "../Helpers/FInishCompliance";
 
 const DashboardDesktop = () => {
   const [SubmitBusinessInfo, setSubmitBusinessInfo] = useState(false);
@@ -93,7 +93,7 @@ const DashboardDesktop = () => {
       {submitPersonalInfoState && (
         <UploadPersonalDocs onSubmit={submitPersonalDocs} />
       )}
-      {submitPersonalDocsState && <EndCompliance />}
+      {submitPersonalDocsState && <FinishCompliance />}
     </div>
   );
 };
