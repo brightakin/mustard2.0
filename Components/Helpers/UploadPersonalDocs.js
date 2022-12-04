@@ -72,7 +72,7 @@ const UploadPersonalDocs = (props) => {
           <h1 className=" h-36 w-[36rem] mt-[2rem] text-2xl font-extrabold text-[#3a3a3a] leading-[40px] text-left ">
             Almost Done!
           </h1>
-          <div className="h-[14rem] w-[25rem] lg:w-[30rem] xl:w-[36.5rem] border-2 border-[#a6a6aa] p-9 rounded-3xl mt-[-3rem]">
+          <div className="h-[14rem] w-[25rem] lg:w-[30rem] xl:w-[36.5rem] mr-[2rem] border-2 border-[#a6a6aa] p-9 rounded-3xl mt-[-3rem]">
             <div className="flex gap-5">
               <label className="text-[#3a3a3a] text-2xl font-bold w-full">
                 Upload a Picture
@@ -115,7 +115,7 @@ const UploadPersonalDocs = (props) => {
           </div>
           <button
             onClick={submitHandler}
-            className="h-[3.5rem] w-[69%] lg:w-[80%] xl:w-[100%] mt-8 rounded-[10px] text-[24px] bg-[#000000] text-[#ffffff] hover:scale-105 duration-500 "
+            className="h-[3.5rem] w-[69%] lg:w-[80%] xl:w-[95%] mt-8 rounded-[10px] text-[24px] bg-[#000000] text-[#ffffff] hover:scale-105 duration-500 "
           >
             Submit
           </button>

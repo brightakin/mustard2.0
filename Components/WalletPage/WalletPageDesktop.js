@@ -56,11 +56,11 @@ const WalletPageDesktop = () => {
             <hr className=" mt-6" />
             <div className="flex mt-6 gap-32 lg:gap-72">
               <p className="text-[#3a3a3a] text-xl">Available Balance</p>
-              <p className="text-[#3a3a3a] text-xl">USD 0.00</p>
+              <p className="text-[#3a3a3a] text-xl">NGN 0.00</p>
             </div>
             <div className="flex mt-6 gap-[7.5rem] lg:gap-[17.4rem]">
               <p className="text-[#3a3a3a] text-xl">Collection Balance</p>
-              <p className="text-[#3a3a3a] text-xl">USD 0.00</p>
+              <p className="text-[#3a3a3a] text-xl">NGN 0.00</p>
             </div>
           </div>
           <div className=" ml-6 xl:ml-10">
