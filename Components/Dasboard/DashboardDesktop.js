@@ -1,6 +1,6 @@
 import BusinessInfo from "../Helpers/BusinessInfo";
 import UploadDocs from "../Helpers/UploadDocs";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import PersonalInfo from "../Helpers/PersonalInfo";
 import UploadPersonalDocs from "../Helpers/UploadPersonalDocs";
 import FinishCompliance from "../Helpers/FInishCompliance";
@@ -34,21 +34,23 @@ const DashboardDesktop = () => {
   };
 
   return (
-    <div className="bg-[#212936] flex gap-10 h-[63rem] w-full">
-      <SideBar />
-      {!SubmitBusinessInfo &&
-        !submitDocsState &&
-        !submitPersonalInfoState &&
-        !submitPersonalDocsState && (
-          <BusinessInfo onSubmit={submitBusinessInfoHandler} />
+    <Fragment>
+      <div className="bg-[#212936] flex gap-10 h-[63rem] w-full">
+        <SideBar />
+        {!SubmitBusinessInfo &&
+          !submitDocsState &&
+          !submitPersonalInfoState &&
+          !submitPersonalDocsState && (
+            <BusinessInfo onSubmit={submitBusinessInfoHandler} />
+          )}
+        {SubmitBusinessInfo && <UploadDocs onSubmit={submitDocs} />}
+        {submitDocsState && <PersonalInfo onSubmit={submitPersonalInfo} />}
+        {submitPersonalInfoState && (
+          <UploadPersonalDocs onSubmit={submitPersonalDocs} />
         )}
-      {SubmitBusinessInfo && <UploadDocs onSubmit={submitDocs} />}
-      {submitDocsState && <PersonalInfo onSubmit={submitPersonalInfo} />}
-      {submitPersonalInfoState && (
-        <UploadPersonalDocs onSubmit={submitPersonalDocs} />
-      )}
-      {submitPersonalDocsState && <FinishCompliance />}
-    </div>
+        {submitPersonalDocsState && <FinishCompliance />}
+      </div>
+    </Fragment>
   );
 };
 

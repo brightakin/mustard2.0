@@ -4,8 +4,8 @@ import circleLinesImg from "../../Assets/circlelines.png";
 
 const LoginPageDesktop = () => {
   return (
-    <div className="flex w-full h-[45rem] gap-32">
-      <div className="w-[33rem] h-[45rem] bg-[#000000]">
+    <div className="flex w-full h-[52rem] gap-32">
+      <div className="w-[33rem] h-[52rem] bg-[#000000]">
         <Image src={blackCardImg} alt="blackcard" />
         <Image className="z-10 " src={circleLinesImg} alt="circlelines" />
       </div>

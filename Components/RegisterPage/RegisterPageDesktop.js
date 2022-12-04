@@ -4,8 +4,8 @@ import circleLinesImg from "../../Assets/circlelines.png";
 
 export default function RegisterPageDesktop() {
   return (
-    <div className="flex w-full h-[50rem] gap-32">
-      <div className="w-[33rem] h-[50rem] bg-[#000000]">
+    <div className="flex w-full h-[52rem] gap-32">
+      <div className="w-[33rem] h-[52rem] bg-[#000000]">
         <Image className="mt-[10rem]" src={blackCardImg} alt="blackcard" />
         <Image className="z-10" src={circleLinesImg} alt="circlelines" />
       </div>

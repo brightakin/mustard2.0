@@ -19,44 +19,47 @@ const SideBar = () => {
   return (
     <div className=" w-64 h-full border-r-2 border-[#313c4e]">
       <div className=" border-b border-[#313c4e]">
-        <p className=" text-xl font-medium ml-4 mt-20 w-44 h-6 text-[#afbdd1]">
-          Sam Eniola
-        </p>
-        <p className="w-44 h-6 text-lg font-light text-[#afbdd1] ml-4 mt-1">
-          Mustard Ltd
+        <p className=" text-xl font-medium ml-4 mb-5 mt-20 w-44 h-6 text-[#afbdd1]">
+          User:#1233d4
         </p>
       </div>
       <div className="border-b border-[#313c4e] pb-5">
-        <Link href="/dashboard">
-          <p className=" h-4 w-36 ml-16 mt-4  text-[#56657f] text-sm hover:translate-x-2 duration-500">
-            <Image className="inline" src={addImg} alt="add" /> Compliance
-          </p>
+        <Link
+          className=" h-4 w-36 ml-2 mt-4 flex gap-[2rem]  text-[#56657f] text-sm hover:translate-x-2 duration-500"
+          href="/dashboard"
+        >
+          <Image src={addImg} alt="add" />
+          <p>Compliance</p>
         </Link>
-        <Link href="/transactions">
+        <Link
+          className="h-4 w-36 ml-2 mt-8 flex gap-[2rem] text-[#56657f] text-sm hover:translate-x-2 duration-500"
+          href="/transactions"
+        >
           {" "}
-          <p className="h-4 w-36 ml-16 mt-8 text-[#56657f] text-sm hover:translate-x-2 duration-500">
-            <Image className="inline" src={messageImg} alt="message" />
-            Transactions
-          </p>
+          <Image src={messageImg} alt="message" />
+          <p>Transactions</p>
         </Link>
-        <Link href="/customers">
-          <p className="h-4 w-36 ml-16 mt-7 text-[#56657f] text-sm hover:translate-x-2 duration-500">
-            <Image className="inline" src={peopleImg} alt="people" /> Customers
-          </p>
+        <Link
+          className="h-4 w-36 ml-2 mt-8 flex gap-[2rem] text-[#56657f] text-sm hover:translate-x-2 duration-500"
+          href="/customers"
+        >
+          <Image src={peopleImg} alt="people" />
+          <p>Customers</p>
         </Link>
-        <Link href="/cards">
-          <p className="h-4 w-36 ml-16 mt-7 text-[#56657f] text-sm hover:translate-x-2 duration-500">
-            <Image className="inline" src={creditCardImg} alt="credit-card" />{" "}
-            Cards
-          </p>
+        <Link
+          className="h-4 w-36 ml-2 mt-8 flex gap-[2rem] text-[#56657f] text-sm hover:translate-x-2 duration-500"
+          href="/cards"
+        >
+          <Image src={creditCardImg} alt="credit-card" />
+          <p>Cards</p>
         </Link>
         <button
           onClick={handleToggle}
-          className="h-4 w-36 ml-14 mt-7 text-[#56657f] text-sm hover:translate-x-2 duration-500"
+          className="h-4 w-36 ml-2 mt-8 flex gap-[2.5rem] lg:gap-[2rem] text-[#56657f] text-sm hover:translate-x-2 duration-500"
         >
-          <Image className="inline" src={walletImg} alt="wallet" /> Wallet{" "}
-          {toggleDropdown && <span className="ml-12">&#x25B2;</span>}
-          {!toggleDropdown && <span className="ml-12">&#x25BC;</span>}
+          <Image className="w-52 inline" src={walletImg} alt="wallet" /> Wallet{" "}
+          {toggleDropdown && <span className="ml-8">&#x25B2;</span>}
+          {!toggleDropdown && <span className="ml-8">&#x25BC;</span>}
         </button>
         {toggleDropdown && (
           <Link href="/wallet">
@@ -66,7 +69,7 @@ const SideBar = () => {
           </Link>
         )}
         {toggleDropdown && (
-          <Link href="/wallet">
+          <Link href="/history">
             <p className="h-4 w-36 ml-16 mt-7 text-[#56657f] transition-all ease-in  text-sm hover:translate-x-2 duration-500">
               Balance History
             </p>
@@ -74,17 +77,20 @@ const SideBar = () => {
         )}
       </div>
       <div>
-        <p className="text-[#56657f] text-sm ml-4">Settings</p>
-        <Link href="/settings">
-          <p className="h-4 w-36 ml-16 mt-7 text-[#56657f] text-sm hover:translate-x-2 duration-500">
-            <Image className="inline" src={settingImg} alt="setting" /> Main
-            Settings
-          </p>
+        <p className="text-[#38455c] mt-4 text-lg ml-4">Settings</p>
+        <Link
+          className="h-4 w-36 ml-2 mt-8 flex gap-[2rem] text-[#56657f] text-sm hover:translate-x-2 duration-500"
+          href="/settings"
+        >
+          <Image src={settingImg} alt="setting" />
+          <p>Main Settings</p>
         </Link>
-        <Link href="/developer">
-          <p className="h-4 w-36 ml-16 mt-7 text-[#56657f] text-sm hover:translate-x-2 duration-500">
-            <Image className="inline" src={addImg} alt="add" /> Developer
-          </p>
+        <Link
+          className="h-4 w-36 ml-2 mt-8 flex gap-[2rem] text-[#56657f] text-sm hover:translate-x-2 duration-500"
+          href="/developers"
+        >
+          <Image src={addImg} alt="add" />
+          <p>Developer</p>
         </Link>
       </div>
     </div>

@@ -10,8 +10,8 @@ const PersonalInfo = (props) => {
       <p className=" text-2xl w-40 h-6 font-bold mt-5 ml-7 text-[#3a3a3a]">
         Compliance
       </p>
-      <div className="flex gap-[8rem]">
-        <div className="mt-[4.5rem] ml-[8rem]">
+      <div className="flex gap-[2rem] lg:gap-[8rem]">
+        <div className="mt-[4.5rem] ml-[2rem] lg:ml-[8rem]">
           <div className="flex text-center w-full">
             <div className=" h-8 w-8 bg-[#000] text-[#ffffff] inline-block rounded-[50px] relative font-semibold text-lg">
               <span>&#10004;</span>
@@ -53,7 +53,7 @@ const PersonalInfo = (props) => {
           <div className="mt-[-5rem]">
             <label className="text-[#3a3a3a]">Full name</label>
             <input
-              className=" w-[100%] h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left rounded-[15px] "
+              className=" w-[90%] xl:w-[100%] h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left rounded-[15px] "
               type={"text"}
               id="full name"
               name="full name"
@@ -62,16 +62,16 @@ const PersonalInfo = (props) => {
           <div className="mt-7">
             <label className="text-[#3a3a3a]">Email Address</label>
             <input
-              className="w-[100%] h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
+              className=" w-[90%] xl:w-[100%] h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
               type={"email"}
               id="email"
               name="email"
             />
           </div>
           <div className="mt-7">
-            <label className="text-[#3a3a3a]">BVN</label>
+            <label className="text-[#3a3a3a]">BVN</label> <br />
             <input
-              className="w-[100%] h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
+              className=" w-[90%] xl:w-[100%] h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
               type={"number"}
               id="bvn"
               name="bvn"
@@ -80,7 +80,7 @@ const PersonalInfo = (props) => {
           <div className="mt-7">
             <label className="text-[#3a3a3a] w-full">Phone Number</label>
             <input
-              className="w-[100%] h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
+              className=" w-[90%] xl:w-[100%] h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
               type={"number"}
               id="phone number"
               name="phone number"
@@ -89,7 +89,7 @@ const PersonalInfo = (props) => {
           <div className="mt-7">
             <label className="text-[#3a3a3a] w-full">Date of Birth</label>
             <input
-              className="w-[100%] h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
+              className=" w-[90%] xl:w-[100%] h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
               type={"date"}
               id="dob"
               name="dob"
@@ -99,7 +99,7 @@ const PersonalInfo = (props) => {
             <div>
               <label>Country</label>
               <select
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-black-700 focus:border-black-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-black-700 focus:border-black-500 block  w-[90%] xl:w-[100%] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 name="country"
                 id="country"
               >
@@ -886,7 +886,7 @@ const PersonalInfo = (props) => {
             <div>
               <label>House No</label>
               <input
-                className=" w-[14rem] h-[3rem] text-[14px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left rounded-[15px] "
+                className=" w-[90%] xl:w-[100%] h-[3rem] text-[14px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left rounded-[15px] "
                 type={"text"}
                 id="hpuse no"
                 name="house no"
@@ -898,7 +898,7 @@ const PersonalInfo = (props) => {
             <div>
               <label>State</label>
               <input
-                className="w-[14rem] h-[3rem] text-[14px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left rounded-[15px] "
+                className=" w-[90%] xl:w-[100%] h-[3rem] text-[14px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left rounded-[15px] "
                 type={"text"}
                 id="state"
                 name="state"
@@ -907,7 +907,7 @@ const PersonalInfo = (props) => {
             <div>
               <label>City</label>
               <input
-                className=" w-[14rem] h-[3rem] text-[14px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left rounded-[15px] "
+                className=" w-[90%] xl:w-[100%] h-[3rem] text-[14px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left rounded-[15px] "
                 type={"text"}
                 id="city"
                 name="city"
@@ -916,7 +916,7 @@ const PersonalInfo = (props) => {
           </div>
           <button
             onClick={submitHandler}
-            className="h-[3.5rem] w-[100%] mt-8 rounded-[10px] text-[24px] bg-[#000000] text-[#ffffff] hover:scale-105 duration-500 "
+            className="h-[3.5rem]  w-[90%] xl:w-[100%] mt-8 rounded-[10px] text-[24px] bg-[#000000] text-[#ffffff] hover:scale-105 duration-500 "
           >
             Finish
           </button>

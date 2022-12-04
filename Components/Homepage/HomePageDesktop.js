@@ -33,7 +33,7 @@ const HomePageDesktop = () => {
               fintechs for them to build a great solution out there.{" "}
             </p>
             <button className=" w-52 h-14 rounded-xl mt-4 ml-12 hover:scale-105 duration-500 text-[#3a3a3a] text-2xl font-semibold bg-[#f8f7fa] hover:">
-              Explore Zenfin
+              Explore Bindent
             </button>
           </div>
           <div>
@@ -51,7 +51,7 @@ const HomePageDesktop = () => {
         </div>
       </div>
       <div className="w-full pt-10 h-[75rem] bg-[#f8f7fa]">
-        <div className="flex justify-between">
+        <div className="flex gap-[14rem] lg:gap-0 lg:justify-between">
           <div>
             <hr className="bg-[rgb(253,188,31)] w-16 ml-12 h-[4px]" />
             <p className="w-full h-10 font-bold text-2xl ml-12 mt-5 text-left text-[#3a3a3a]">
@@ -62,7 +62,7 @@ const HomePageDesktop = () => {
             </p>
           </div>
           <div>
-            <p className="w-[40rem] mr-10 h-48 text-lg text-[#3a3a3a] mt-2">
+            <p className="w-[25rem] lg:w-[40rem] mr-10 h-48 text-lg text-[#3a3a3a] mt-2">
               Lorem ipsum dolor sit amet consectetur. Ultrices nunc lectus sem
               sit nullam blandit velit diam enim. Placerat ac id semper leo sed
               vitae. Consectetur at etiam vitae nulla non ante iaculis.
@@ -70,7 +70,7 @@ const HomePageDesktop = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-between">
+        <div className="flex gap-[25rem] lg:gap-0 lg:justify-between">
           <div>
             <hr className="bg-[rgb(253,188,31)] w-16 ml-12 h-[4px]" />
             <p className="w-full h-10 font-bold text-2xl ml-12 mt-10 text-left text-[#3a3a3a]">
@@ -80,13 +80,13 @@ const HomePageDesktop = () => {
               The solution every fintech needs
             </p>
           </div>
-          <div className="flex w-[36rem] rounded-xl mr-28 h-56 bg-[#ffffff]">
+          <div className="flex w-[100rem] lg:w-[36rem] rounded-xl mr-28 h-56 bg-[#ffffff]">
             <Image className=" h-40 w-52" src={cardImg} alt="card" />
             <div className="mt-10">
-              <p className="w-56 h-8 text-xl font-bold text-[#3a3a3a] ">
+              <p className="w-56 h-8 text-lg lg:text-xl font-bold text-[#3a3a3a] ">
                 Virtual Dollar Card
               </p>
-              <p className="w-[25rem] pr-5 h-40 text-lg text-[#3a3a3a]">
+              <p className="w-[13rem] lg:w-[25rem] pr-5 h-40 text-sm lg:text-lg text-[#3a3a3a]">
                 Lorem ipsum dolor sit amet consectetur. Ultrices nunc lectus sem
                 sit nullam blandit velit diam enim. Placerat ac id semper leo
                 sed vitae. Consectetur at etiam vitae nulla.
@@ -108,26 +108,30 @@ const HomePageDesktop = () => {
             />
           </div>
           <div>
-            <div className="flex w-[36rem] rounded-xl h-56 bg-[#ffffff]">
-              <Image className="h-48 w-60" src={atmImg} alt="card" />
+            <div className="flex w-[25rem] lg:w-[36rem] rounded-xl h-56 bg-[#ffffff]">
+              <Image
+                className=" h-28 lg:h-48 w-40 lg:w-60"
+                src={atmImg}
+                alt="card"
+              />
               <div className="mt-10">
-                <p className="w-full h-8 text-xl font-bold text-[#3a3a3a] ">
+                <p className="w-full h-8 text-lg lg:text-xl font-bold text-[#3a3a3a] ">
                   Dedicated Virtual Account Number
                 </p>
-                <p className="w-[25rem] pr-5 h-40 text-lg text-[#3a3a3a]">
+                <p className="w-[15rem] lg:w-[25rem] pr-5 h-40 text-sm lg:text-lg text-[#3a3a3a]">
                   Lorem ipsum dolor sit amet consectetur. Ultrices nunc lectus
                   sem sit nullam blandit velit diam enim. Placerat ac id semper
                   leo sed vitae. Consectetur at etiam vitae nulla.
                 </p>
               </div>
             </div>
-            <div className="flex absolute z-10 w-[36rem] mt-[3rem] rounded-xl mr-10 h-56 bg-[#ffffff]">
+            <div className="flex absolute z-10 w-[25rem] lg:w-[36rem] mt-[3rem] rounded-xl mr-10 h-56 bg-[#ffffff]">
               <Image className="h-48 w-60" src={apiImg} alt="card" />
               <div className="mt-10">
                 <p className="w-56 h-8 text-xl font-bold text-[#3a3a3a] ">
                   APIs
                 </p>
-                <p className="w-[25rem] pr-5 h-40 text-lg text-[#3a3a3a]">
+                <p className="w-[15rem] lg:w-[25rem] pr-5 h-40 text-sm lg:text-lg text-[#3a3a3a]">
                   Lorem ipsum dolor sit amet consectetur. Ultrices nunc lectus
                   sem sit nullam blandit velit diam enim. Placerat ac id semper
                   leo sed vitae. Consectetur at etiam vitae nulla.
@@ -153,7 +157,7 @@ const HomePageDesktop = () => {
           </p>
           {/* <Image src={curvedLineImg} alt="curvedline" /> */}
         </div>
-        <div className="flex gap-[16rem] mt-[1rem]">
+        <div className="flex gap-[12rem] mr-5 lg:mr-0 lg:gap-[16rem] mt-[1rem]">
           <div>
             <hr className="bg-[rgb(253,188,31)] w-16 ml-12 h-[4px]" />
             <p className="w-[34rem] h-10 font-bold text-2xl ml-12 mt-2 text-left text-[#3a3a3a]">
@@ -172,7 +176,7 @@ const HomePageDesktop = () => {
             />
           </div>
         </div>
-        <div className="flex mt-[6rem] gap-[5rem] justify-center">
+        <div className="flex mt-[6rem] gap-2 lg:gap-[5rem] justify-center">
           <div className="w-[30rem] h-[16rem] border-2 border-[#a6a6aa] rounded-xl">
             <Image
               className=" w-10 h-10 mt-[3rem] mx-auto"
@@ -235,7 +239,7 @@ const HomePageDesktop = () => {
             <p className="h-8 w-40 text-lg text-[#a6a6aa]">Hanu, Patricia</p>
           </div>
         </div>
-        <div className="flex justify-center mt-[10rem]">
+        <div className="flex lg:justify-center mt-[10rem]">
           <div>
             <hr className="bg-[rgb(253,188,31)] w-16 ml-12 h-[4px]" />
             <p className="w-[34rem] h-10 font-bold text-2xl ml-12 mt-10 text-left text-[#3a3a3a]">
@@ -245,26 +249,26 @@ const HomePageDesktop = () => {
               Build the solution the world needs.
             </p>
           </div>
-          <form className="w-[36rem] px-[3rem] py-[3rem] h-[30rem] bg-[#3a3a3a] rounded-3xl ">
+          <form className=" w-[26rem] lg:w-[36rem] px-[3rem] py-[3rem] h-[30rem] bg-[#3a3a3a] rounded-3xl ">
             <p className="w-64 h-10 text-[#cbcbd4] text-xl font-bold">
               Get Started here
             </p>
             <input
-              className="w-[30rem] text-sm text-[#cbcbd4] p-5 bg-[#5a5757] mt-[2rem] rounded-3xl"
+              className="w-[21rem] lg:w-[30rem] text-sm text-[#cbcbd4] p-5 bg-[#5a5757] mt-[2rem] rounded-3xl"
               type="text"
               placeholder="Business Name"
             />
             <input
-              className="w-[30rem] text-sm text-[#cbcbd4] p-5  bg-[#5a5757] mt-[2rem] rounded-3xl"
+              className=" w-[21rem] lg:w-[30rem] text-sm text-[#cbcbd4] p-5  bg-[#5a5757] mt-[2rem] rounded-3xl"
               type="text"
               placeholder="Your Email"
             />
             <input
-              className="w-[30rem] text-sm text-[#cbcbd4] p-5 bg-[#5a5757] mt-[2rem] rounded-3xl"
+              className="w-[21rem] lg:w-[30rem] text-sm text-[#cbcbd4] p-5 bg-[#5a5757] mt-[2rem] rounded-3xl"
               type="text"
               placeholder="Password"
             />
-            <button className="w-[30rem] text-xl font-medium text-[#000000] h-16 px-10 bg-[#ffffff] mt-[2rem] rounded-3xl">
+            <button className="w-[21rem] lg:w-[30rem] text-xl font-medium text-[#000000] h-16 px-10 bg-[#ffffff] mt-[2rem] rounded-3xl">
               {" "}
               Sign Up
             </button>
