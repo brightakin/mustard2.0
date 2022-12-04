@@ -17,8 +17,15 @@ import metricsImg from "../../Assets/metrics.png";
 import communityImg from "../../Assets/community.png";
 import documentationImg from "../../Assets/documentation.png";
 import patriciaPictureImg from "../../Assets/patriciapicture.png";
+import { useRouter } from "next/router";
 
 const HomePageDesktop = () => {
+  const router = useRouter();
+  const handleDashboard = (e) => {
+    e.preventDefault();
+    router.push("/dashboard");
+  };
+
   return (
     <Fragment>
       <div className="w-full h-[100vh] bg-[#000000]">
@@ -32,7 +39,10 @@ const HomePageDesktop = () => {
               We provide API development and other professional tools for
               fintechs for them to build a great solution out there.{" "}
             </p>
-            <button className=" w-52 h-14 rounded-xl mt-4 ml-12 hover:scale-105 duration-500 text-[#3a3a3a] text-2xl font-semibold bg-[#f8f7fa] hover:">
+            <button
+              onClick={handleDashboard}
+              className=" w-52 h-14 rounded-xl mt-4 ml-12 hover:scale-105 duration-500 text-[#3a3a3a] text-2xl font-semibold bg-[#f8f7fa] hover:"
+            >
               Explore Bindent
             </button>
           </div>
