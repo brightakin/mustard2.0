@@ -13,7 +13,7 @@ const DevelopersDesktop = () => {
   return (
     <div className="bg-[#212936] flex gap-10 h-[63rem] w-full">
       <SideBar />
-      <div className=" w-[56rem] xl:w-[65rem] h-[58rem] mr-6 mt-5 bg-white rounded-3xl">
+      <div className=" w-[45rem] xl:w-[65rem] h-[58rem] mr-6 mt-5 bg-white rounded-3xl">
         <div className="flex justify-between">
           <p className=" text-xl w-40 h-6 font-bold mt-5 ml-7 text-[#3a3a3a]">
             Developers

@@ -47,7 +47,7 @@ const FinishCompliance = () => {
           <p className="h-10 w-[36rem] mt-[2rem] text-2xl font-extrabold text-[#3a3a3a] leading-[40px]">
             All Done!
           </p>
-          <button className="h-[3.5rem] w-[68%] lg:w-[80%] xl:w-[100%] rounded-[10px] text-[24px] bg-[#000000] text-[#ffffff] hover:scale-105 duration-500 ">
+          <button className="h-[3.5rem] w-[68%] lg:w-[80%] xl:w-[95%] rounded-[10px] text-[24px] bg-[#000000] text-[#ffffff] hover:scale-105 duration-500 ">
             Go to Dashhboard
           </button>
         </div>

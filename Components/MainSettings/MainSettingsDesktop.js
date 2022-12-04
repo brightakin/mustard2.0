@@ -37,7 +37,7 @@ const MainSettingsDesktop = () => {
               <div>
                 <label>First Name</label>
                 <input
-                  className="w-[12rem] lg:w-[15.5rem] xl:w-[15rem] h-[3rem] text-[14px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left rounded-[15px] "
+                  className="w-[11rem] lg:w-[15.5rem] xl:w-[15rem] h-[3rem] text-[14px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left rounded-[15px] "
                   type={"text"}
                   id="firstName"
                   name="firstName"
@@ -47,7 +47,7 @@ const MainSettingsDesktop = () => {
               <div>
                 <label>Last Name</label>
                 <input
-                  className="w-[12rem] lg:w-[15.5rem] xl:w-[15rem]  h-[3rem] text-[14px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left rounded-[15px] "
+                  className="w-[11rem] lg:w-[15.5rem] xl:w-[15rem]  h-[3rem] text-[14px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left rounded-[15px] "
                   type={"text"}
                   id="Surname"
                   name="Surname"
@@ -57,8 +57,9 @@ const MainSettingsDesktop = () => {
             </div>
             <div className="mt-7">
               <label className="text-[#3a3a3a]">Email</label>
+              <br />
               <input
-                className="w-[26rem] lg:w-[32.5rem] xl:w-[31rem] h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
+                className="w-[24.5rem] lg:w-[32.5rem] xl:w-[31rem] h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
                 type={"email"}
                 id="email"
                 name="email"
@@ -119,13 +120,13 @@ const MainSettingsDesktop = () => {
                 />
               </div>
             </div>
-            <div className="flex gap-5 mt-2">
+            <div className="flex gap-2 mt-2">
               <div className="mt-7">
                 <label className="text-[#3a3a3a] w-full">
                   Business Address
                 </label>
                 <input
-                  className="w-[12rem] lg:w-[15.5rem] xl:w-[15rem]  h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
+                  className="w-[11rem] lg:w-[15.5rem] xl:w-[15rem]  h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
                   type={"text"}
                   id="business address"
                   name="business address"
@@ -135,7 +136,7 @@ const MainSettingsDesktop = () => {
               <div className="mt-7">
                 <label className="text-[#3a3a3a] w-full">Business Email</label>
                 <input
-                  className="w-[12rem] lg:w-[15.5rem] xl:w-[15rem]  h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
+                  className="w-[11rem] lg:w-[15.5rem] xl:w-[15rem]  h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
                   type={"text"}
                   id="business email"
                   name="business email"
@@ -146,7 +147,7 @@ const MainSettingsDesktop = () => {
             <div className="mt-7">
               <label className="text-[#3a3a3a] w-full">Description</label>
               <input
-                className="w-[26rem] lg:w-[32.5rem] xl:w-[31rem] h-[6rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[9x] "
+                className="w-[24.5rem] lg:w-[32.5rem] xl:w-[31rem] h-[6rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[9x] "
                 type={"text"}
                 id="description"
                 name="description"
