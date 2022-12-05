@@ -12,7 +12,7 @@ const TransactionsDesktop = () => {
         <p className=" text-xl w-40 h-6 font-bold mt-5 ml-7 text-[#3a3a3a]">
           Transactions
         </p>
-        <div className="flex gap-[14rem] lg:gap-[23rem]">
+        <div className="flex gap-[11rem]  lg:gap-[14rem] xl:gap-[23rem]">
           <div className="flex">
             <input
               className="bg-[#f8f7fa] ml-6 mt-9 w-48 h-8 p-5 rounded-xl text-[#afbdd1] text-lg font-medium"
@@ -25,7 +25,7 @@ const TransactionsDesktop = () => {
               <Image className="pt-1" src={filterImg} alt="filter" />
             </button>
           </div>
-          <button className="bg-[#cbcbd4] ml-6 mt-9 w-24 h-9 rounded-xl text-[#3a3a3a] text-lg font-medium">
+          <button className="bg-[#cbcbd4] ml-6 mt-9 w-16 lg:w-20 xl:w-24 h-9 rounded-xl text-[#3a3a3a] text-xs lg:text-base xl:text-lg font-medium">
             Export
           </button>
         </div>

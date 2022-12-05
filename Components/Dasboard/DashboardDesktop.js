@@ -33,6 +33,26 @@ const DashboardDesktop = () => {
     setSubmitPersonalDocs(true);
   };
 
+  const goToBusinessInfo = () => {
+    setSubmitBusinessInfo(false);
+    setSubmitDocsState(false);
+    setSubmitPersonalInfo(false);
+    setSubmitPersonalDocs(false);
+  };
+
+  const goToPersonalInfo = () => {
+    setSubmitBusinessInfo(false);
+    setSubmitDocsState(true);
+    setSubmitPersonalInfo(false);
+  };
+
+  const goToUploadPersonalDocs = () => {
+    setSubmitBusinessInfo(false);
+    setSubmitDocsState(false);
+    setSubmitPersonalInfo(true);
+    setSubmitPersonalDocs(false);
+  };
+
   return (
     <Fragment>
       <div className="bg-[#212936] flex gap-10 h-[63rem] w-full">
@@ -43,12 +63,22 @@ const DashboardDesktop = () => {
           !submitPersonalDocsState && (
             <BusinessInfo onSubmit={submitBusinessInfoHandler} />
           )}
-        {SubmitBusinessInfo && <UploadDocs onSubmit={submitDocs} />}
+        {SubmitBusinessInfo && (
+          <UploadDocs prevBtn={goToBusinessInfo} onSubmit={submitDocs} />
+        )}
         {submitDocsState && <PersonalInfo onSubmit={submitPersonalInfo} />}
         {submitPersonalInfoState && (
-          <UploadPersonalDocs onSubmit={submitPersonalDocs} />
+          <UploadPersonalDocs
+            prevBtn={goToPersonalInfo}
+            onSubmit={submitPersonalDocs}
+          />
         )}
-        {submitPersonalDocsState && <FinishCompliance />}
+        {submitPersonalDocsState && (
+          <FinishCompliance
+            onSubmit={goToBusinessInfo}
+            prevBtn={goToUploadPersonalDocs}
+          />
+        )}
       </div>
     </Fragment>
   );

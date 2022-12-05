@@ -7,12 +7,12 @@ const BusinessInfo = (props) => {
 
   return (
     <Fragment>
-      <div className="w-[70%] lg:w-full h-[58rem] mr-6 mt-5 bg-white rounded-3xl">
+      <div className="w-[70%] xl:w-full h-[58rem] mr-6 mt-5 bg-white rounded-3xl">
         <p className=" text-2xl w-40 h-6 font-bold mt-5 ml-7 text-[#3a3a3a]">
           Compliance
         </p>
-        <div className="flex gap-[4rem] lg:gap-[8rem]">
-          <div className="mt-[4.5rem] ml-[2rem] lg:ml-[8rem]">
+        <div className="flex gap-[4rem] xl:gap-[8rem]">
+          <div className="mt-[4.5rem] ml-[2rem] xl:ml-[8rem]">
             <div className="flex text-center w-full">
               <div className=" h-8 w-8 bg-[#1976d2] text-[#ffffff] inline-block rounded-[50px] relative font-semibold text-lg">
                 <span>1</span>
@@ -55,7 +55,7 @@ const BusinessInfo = (props) => {
               <label className="text-[#3a3a3a]">Business name</label>
               <br />
               <input
-                className=" w-[75%] lg:w-[90%] xl:w-[100%] h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left rounded-[15px] "
+                className=" w-[60%] lg:w-[80%] xl:w-[100%] h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left rounded-[15px] "
                 type={"text"}
                 id="business name"
                 name="business name"
@@ -65,7 +65,7 @@ const BusinessInfo = (props) => {
               <label className="text-[#3a3a3a]">Business Reg Number</label>
               <br />
               <input
-                className="w-[75%] lg:w-[90%]  xl:w-[100%] h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
+                className="w-[60%] lg:w-[80%]  xl:w-[100%] h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
                 type={"text"}
                 id="reg name"
                 name="reg name"
@@ -75,7 +75,7 @@ const BusinessInfo = (props) => {
               <label className="text-[#3a3a3a]">Business Website</label>
               <br />
               <input
-                className="w-[75%] lg:w-[90%]  xl:w-[100%] h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
+                className="w-[60%] lg:w-[80%]  xl:w-[100%] h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
                 type={"text"}
                 id="text"
                 name="text"
@@ -85,7 +85,7 @@ const BusinessInfo = (props) => {
               <label className="text-[#3a3a3a] w-full">Business Address</label>
               <br />
               <input
-                className="w-[75%] lg:w-[90%] xl:w-[100%] h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
+                className="w-[60%] lg:w-[80%] xl:w-[100%] h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
                 type={"text"}
                 id="address"
                 name="address"
@@ -98,7 +98,7 @@ const BusinessInfo = (props) => {
               </label>
               <br />
               <input
-                className="w-[75%] lg:w-[90%] xl:w-[100%] h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
+                className="w-[60%] lg:w-[80%] xl:w-[100%] h-[3rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
                 type={"text"}
                 id="business type"
                 name="business type"
@@ -109,7 +109,7 @@ const BusinessInfo = (props) => {
               <label className="text-[#3a3a3a] w-full">Description</label>
               <br />
               <input
-                className="w-[75%] lg:w-[90%]  xl:w-[100%] h-[6rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
+                className="w-[60%] lg:w-[80%]  xl:w-[100%] h-[6rem] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
                 type={"text"}
                 id="description"
                 name="description"
@@ -118,7 +118,7 @@ const BusinessInfo = (props) => {
             </div>
             <button
               onClick={handleFinish}
-              className="h-[3.5rem] w-[75%]  lg:w-[90%] xl:w-[100%] mt-8 rounded-[10px] text-[24px] bg-[#000000] text-[#ffffff] hover:scale-105 duration-500 "
+              className="h-[3.5rem] w-[60%]  lg:w-[80%] xl:w-[100%] mt-8 rounded-[10px] text-[24px] bg-[#000000] text-[#ffffff] hover:scale-105 duration-500 "
             >
               Finish
             </button>

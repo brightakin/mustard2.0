@@ -1,11 +1,19 @@
-const FinishCompliance = () => {
+const FinishCompliance = (props) => {
+  const handlePrevBtn = () => {
+    props.prevBtn();
+  };
+
+  const handleSubmit = () => {
+    props.onSubmit();
+  };
+
   return (
-    <div className="w-[45rem] lg:w-[57rem] xl:w-[70rem] h-[43rem] mr-6 mt-5 bg-white rounded-3xl">
+    <div className="w-[39.5rem] lg:w-[46rem] xl:w-[70rem] h-[43rem] mr-6 mt-5 bg-white rounded-3xl">
       <p className=" text-2xl w-40 h-6 font-bold mt-5 ml-7 text-[#3a3a3a]">
         Compliance
       </p>
       <div className="flex gap-[2rem] lg:gap-[4rem]">
-        <div className="mt-[4.5rem] ml-[2rem] lg:ml-[8rem]">
+        <div className="mt-[4.5rem] ml-[2rem] xl:ml-[8rem]">
           <div className="flex text-center w-full">
             <div className=" h-8 w-8 bg-[#000] text-[#ffffff] inline-block rounded-[50px] relative font-semibold text-lg">
               <span>&#10004;</span>
@@ -41,13 +49,16 @@ const FinishCompliance = () => {
           </div>
         </div>
         <div>
-          <p className="text-[20px] font-medium">
+          <button onClick={handlePrevBtn} className="text-[20px] font-medium">
             <span className="text-[#1976d2]">&#x2190;</span>Back
-          </p>
+          </button>
           <p className="h-10 w-[36rem] mt-[2rem] text-2xl font-extrabold text-[#3a3a3a] leading-[40px]">
             All Done!
           </p>
-          <button className="h-[3.5rem] w-[68%] lg:w-[80%] xl:w-[95%] rounded-[10px] text-[24px] bg-[#000000] text-[#ffffff] hover:scale-105 duration-500 ">
+          <button
+            onClick={handleSubmit}
+            className="h-[3.5rem] w-[50%] lg:w-[58%] xl:w-[95%] rounded-[10px] text-[24px] bg-[#000000] text-[#ffffff] hover:scale-105 duration-500 "
+          >
             Go to Dashhboard
           </button>
         </div>

@@ -22,53 +22,61 @@ const WalletPageDesktop = () => {
         </p>
         <div className="flex mt-16">
           <div className="border-r-2 h-[40rem] border-[#cbcbd4] p-5">
-            <div className="flex gap-16 lg:gap-44">
+            <div className="flex gap-12 lg:gap-20 xl:gap-40">
               <div className="flex gap-4">
                 <Image src={usdFlagImg} alt="usdflag" />
-                <p className=" w-28 h-6 text-lg mt-2 font-extrabold">
+                <p className=" w-28 h-6 text-base xl:text-lg mt-2 font-extrabold">
                   USD Wallet
                 </p>
               </div>
-              <button className="bg-[#cbcbd4] pt-1 w-36 h-9 text-left pl-2 rounded-lg text-[#3a3a3a] text-lg font-medium">
+              <button className="bg-[#cbcbd4] pt-1 w-28 xl:w-36 h-9 text-left pl-2 rounded-lg text-[#3a3a3a] text-base xl:text-lg font-medium">
                 <p>Fund Wallet</p>
               </button>
             </div>
             <hr className=" mt-6" />
-            <div className="flex mt-6 gap-32 lg:gap-72">
-              <p className="text-[#3a3a3a] text-xl">Available Balance</p>
-              <p className="text-[#3a3a3a] text-xl">USD 0.00</p>
+            <div className="flex mt-6 gap-32 xl:gap-72">
+              <p className="text-[#3a3a3a] text-base xl:text-xl">
+                Available Balance
+              </p>
+              <p className="text-[#3a3a3a] text-base xl:text-xl">USD 0.00</p>
             </div>
-            <div className="flex mt-6 gap-[7.5rem] lg:gap-[17.4rem]">
-              <p className="text-[#3a3a3a] text-xl">Collection Balance</p>
-              <p className="text-[#3a3a3a] text-xl">USD 0.00</p>
+            <div className="flex mt-6 gap-[7.5rem] xl:gap-[17.4rem]">
+              <p className="text-[#3a3a3a] text-base xl:text-xl">
+                Collection Balance
+              </p>
+              <p className="text-[#3a3a3a] text-base xl:text-xl">USD 0.00</p>
             </div>
-            <div className="flex mt-16 gap-16 lg:gap-44">
+            <div className="flex mt-16 gap-12 lg:gap-16 xl:gap-40">
               <div className="flex gap-4">
                 <Image src={ngnFlagImg} alt="usdflag" />
-                <p className=" w-32 xl:w-28 h-6 text-lg mt-2 font-extrabold">
+                <p className=" w-32 xl:w-28 h-6 text-base xl:text-lg mt-2 font-extrabold">
                   NGN Wallet
                 </p>
               </div>
-              <button className="bg-[#cbcbd4] pt-1 w-36 h-9 text-left pl-2 rounded-lg text-[#3a3a3a] text-lg font-medium">
+              <button className="bg-[#cbcbd4] pt-1 w-28 xl:w-36 h-9 text-left pl-2 rounded-lg text-[#3a3a3a] text-base xl:text-lg font-medium">
                 <p>Fund Wallet</p>
               </button>
             </div>
             <hr className=" mt-6" />
-            <div className="flex mt-6 gap-32 lg:gap-72">
-              <p className="text-[#3a3a3a] text-xl">Available Balance</p>
-              <p className="text-[#3a3a3a] text-xl">NGN 0.00</p>
+            <div className="flex mt-6 gap-32 xl:gap-72">
+              <p className="text-[#3a3a3a] text-base xl:text-xl">
+                Available Balance
+              </p>
+              <p className="text-[#3a3a3a] text-base xl:text-xl">NGN 0.00</p>
             </div>
-            <div className="flex mt-6 gap-[7.5rem] lg:gap-[17.4rem]">
-              <p className="text-[#3a3a3a] text-xl">Collection Balance</p>
-              <p className="text-[#3a3a3a] text-xl">NGN 0.00</p>
+            <div className="flex mt-6 gap-32 xl:gap-72">
+              <p className="text-[#3a3a3a] text-base xl:text-xl">
+                Collection Balance
+              </p>
+              <p className="text-[#3a3a3a] text-base xl:text-xl">NGN 0.00</p>
             </div>
           </div>
           <div className=" ml-6 xl:ml-10">
             <p className=" text-xl text-[#3a3a3a] font-extrabold">Converter</p>
             <p className=" text-sm text-[#a6a6aa] mt-2 ">Convert your money</p>
-            <div className=" w-[18rem] lg:w-[22rem] xl:w-[24rem] h-[7rem] rounded-2xl border p-2 border-[#cbcbd4] mt-4">
+            <div className=" w-[16rem] lg:w-[22rem] xl:w-[24rem] h-[7rem] rounded-2xl border p-2 border-[#cbcbd4] mt-4">
               <p className="text-sm text-[#a6a6aa]">You send</p>
-              <div className="flex gap-[10rem] lg:gap-[15rem] mt-2">
+              <div className="flex gap-[8rem] lg:gap-[15rem] mt-2">
                 <p className="text-[#3a3a3a] text-2xl font-extrabold">10</p>
                 <select className="bg-[#3a3a3a] flex gap-3 w-20 h-9 text-left pl-2 rounded-lg text-[#ffffff] text-sm font-medium">
                   <option>USD</option>
@@ -79,9 +87,9 @@ const WalletPageDesktop = () => {
                 </select>
               </div>
             </div>
-            <div className="w-[18rem] lg:w-[22rem] mr-4 xl:w-[24rem] h-[7rem] rounded-2xl border p-2 border-[#cbcbd4] mt-10">
+            <div className="w-[16rem] lg:w-[22rem] mr-4 xl:w-[24rem] h-[7rem] rounded-2xl border p-2 border-[#cbcbd4] mt-10">
               <p className="text-sm text-[#a6a6aa]">Recipient gets</p>
-              <div className="flex gap-[8rem] lg:gap-[11rem] mt-2">
+              <div className="flex gap-[6rem] lg:gap-[11rem] mt-2">
                 <p className="text-[#3a3a3a] text-2xl font-extrabold">
                   6,000.00
                 </p>
@@ -95,7 +103,7 @@ const WalletPageDesktop = () => {
             </p>
             <button
               onClick={popUpHandler}
-              className="h-[60px] w-[18rem] lg:w-[22rem] xl:w-full mt-8 rounded-[10px] text-[24px] bg-[#000000] text-[#ffffff] hover:scale-105 duration-500 "
+              className="h-[60px] w-[16rem] lg:w-[22rem] xl:w-[24rem] mt-8 rounded-[10px] text-[24px] bg-[#000000] text-[#ffffff] hover:scale-105 duration-500 "
             >
               Next
             </button>

@@ -1,6 +1,6 @@
 const CustomersList = () => {
   return (
-    <div className="flex gap-[8rem] ml-4 mt-8">
+    <div className="flex gap-[7rem] lg:gap-[8rem] ml-4 mt-8">
       <p className=" text-xs lg:text-sm w-52 h-5 text-[#3a3a3a]">
         Samuel Ogunrem
       </p>
