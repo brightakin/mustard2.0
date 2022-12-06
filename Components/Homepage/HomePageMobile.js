@@ -21,7 +21,7 @@ import patriciaPictureImg from "../../Assets/patriciapicture.png";
 const HomePageMobile = () => {
   return (
     <Fragment>
-      <div className="w-full h-[100vh] bg-[#000000]">
+      <div className="w-full h-[100vh] sm:h-full bg-[#000000]">
         <div className="flex flex-col gap-[14rem]">
           <div>
             <h1 className="text-[#f8f7fa] w-[21rem] sm:w-[42rem] mt-[10rem] ml-6 h-16 text-4xl sm:text-7xl font-bold text-left leading-[32px]">
@@ -116,71 +116,71 @@ const HomePageMobile = () => {
           </div>
         </div>
         <Image
-          className=" sm:mt-6 ml-[14.5rem] sm:ml-[37.5rem]"
+          className=" mt-5 sm:mt-6 ml-[14.5rem] sm:ml-[37.5rem]"
           src={bigCircleImg}
           alt="bigcircle"
         />
       </div>
-      <div className="w-full h-[110rem] px-[4rem] bg-[#ffffff]">
-        <p className="w-full h-12 text-2xl mt-[5rem] text-center font-extrabold text-[#3a3a3a]">
+      <div className="w-full h-[120rem] sm:h-[160rem] px-[4rem] bg-[#ffffff]">
+        <p className="w-full h-12 text-2xl sm:text-5xl mt-[5rem] text-center font-extrabold text-[#3a3a3a]">
           Our Pay as you Grow Pricing model
         </p>
-        <p className=" h-40 w-[19rem] mt-8 text-[#a6a6aa] mx-auto text-sm text-center font-medium">
+        <p className=" h-40 w-[19rem] sm:w-[30rem] mt-8 sm:mt-16 text-[#a6a6aa] mx-auto text-sm sm:text-2xl text-center font-medium">
           You don’t have to worry about a fixed pricing, you only as your card
           transactions and issuance increases.
         </p>
         <div>
           <hr className="bg-[rgb(253,188,31)] w-16 h-[4px]" />
-          <p className="w-full h-10 font-bold text-2xl mt-5 text-left text-[#3a3a3a]">
+          <p className="w-full h-10 font-bold text-2xl sm:text-3xl mt-5 text-left text-[#3a3a3a]">
             A better Experience for your developers at every step
           </p>
-          <p className="h-20 w-full mt-20 text-sm font-semibold text-[#a6a6aa]">
+          <p className="h-20 w-full mt-20 text-sm sm:text-2xl font-semibold text-[#a6a6aa]">
             Zenfin open source and pro tools have helped millions of ApI
             developers, teams and finance organizations deliver great APIs.
           </p>
         </div>
-        <Image src={consoleImg} alt="console" />
-        <div className="w-[19rem] h-[16rem] mt-20 border-2 border-[#a6a6aa] rounded-xl">
+        <Image className="w-full" src={consoleImg} alt="console" />
+        <div className="w-full h-[16rem] sm:h-[24rem] mt-20 border-2 border-[#a6a6aa] rounded-xl">
           <Image
             className=" w-10 h-10 mt-[3rem] mx-auto"
             src={documentationImg}
             alt="documentation"
           />
-          <p className="w-full h-8 mt-8 text-center text-xl font-bold text-[#000000]">
+          <p className="w-full h-8 mt-8 text-center text-xl sm:text-3xl font-bold text-[#000000]">
             Documentation
           </p>
-          <p className="w-full h-16 text-sm text-center text-[#3a3a3a]">
+          <p className="w-full h-16 text-sm sm:text-2xl sm:mt-5 text-center text-[#3a3a3a]">
             Easy-to-edit guides to help developers get started.
           </p>
         </div>
-        <div className="w-[19rem] h-[16rem] mt-20 border-2 border-[#a6a6aa] rounded-xl">
+        <div className="w-full h-[16rem] sm:h-[24rem] mt-20 border-2 border-[#a6a6aa] rounded-xl">
           <Image
             className=" w-10 h-10 mt-[3rem] mx-auto"
             src={metricsImg}
             alt="documentation"
           />
-          <p className="w-full h-8 mt-8 text-center text-xl font-bold text-[#000000]">
+          <p className="w-full h-8 mt-8 text-center text-xl sm:text-3xl font-bold text-[#000000]">
             Metrics
           </p>
-          <p className="w-full h-16 text-sm text-center text-[#3a3a3a]">
+          <p className="w-full h-16 text-sm sm:text-2xl sm:mt-5 text-center text-[#3a3a3a]">
             Easy-to-edit guides to help developers get started.
           </p>
         </div>
-        <div className="w-[19rem] h-[16rem] mt-20 border-2 border-[#a6a6aa] rounded-xl">
+        <div className="w-full h-[16rem] sm:h-[24rem] mt-20 border-2 border-[#a6a6aa] rounded-xl">
           <Image
             className=" w-10 h-10 mt-[3rem] mx-auto"
             src={communityImg}
             alt="documentation"
           />
-          <p className="w-full h-8 mt-8 text-center text-xl font-bold text-[#000000]">
+          <p className="w-full h-8 mt-8 text-center text-xl sm:text-3xl font-bold text-[#000000]">
             Community
           </p>
-          <p className="w-full h-16 text-sm text-center text-[#3a3a3a]">
+          <p className="w-full h-16 text-sm sm:text-2xl sm:mt-5 text-center text-[#3a3a3a]">
             Easy-to-edit guides to help developers get started.
           </p>
         </div>
       </div>
-      <div className="w-full pt-10 px-12 sm:px-20 h-[55rem] sm:h-[110rem] bg-[#f8f7fa]">
+      <div className="w-full pt-10 px-12 sm:px-20 h-[55rem] sm:h-[60rem] bg-[#f8f7fa]">
         <div>
           <hr className="bg-[rgb(253,188,31)] w-16 h-[4px]" />
           <p className="w-full h-10 font-bold sm:text-6xl text-2xl mt-5 text-left text-[#3a3a3a]">
@@ -190,26 +190,26 @@ const HomePageMobile = () => {
             Build the solution the world needs
           </p>
         </div>
-        <form className=" w-[20rem] px-[1rem] py-[3rem] h-[30rem] bg-[#3a3a3a] rounded-2xl ">
+        <form className=" w-full px-[1rem] py-[3rem] h-[30rem] bg-[#3a3a3a] rounded-2xl ">
           <p className="w-64 h-10 text-[#cbcbd4] text-xl font-bold">
             Get Started here
           </p>
           <input
-            className="w-[18rem] text-sm text-[#cbcbd4] p-3 bg-[#5a5757] mt-[2rem] rounded-lg"
+            className="w-full text-sm text-[#cbcbd4] p-3 bg-[#5a5757] mt-[2rem] rounded-lg"
             type="text"
             placeholder="Business Name"
           />
           <input
-            className=" w-[18rem] text-sm text-[#cbcbd4] p-3  bg-[#5a5757] mt-[2rem] rounded-lg"
+            className=" w-full text-sm text-[#cbcbd4] p-3  bg-[#5a5757] mt-[2rem] rounded-lg"
             type="text"
             placeholder="Your Email"
           />
           <input
-            className="w-[18rem] text-sm text-[#cbcbd4] p-3 bg-[#5a5757] mt-[2rem] rounded-lg"
+            className="w-full text-sm text-[#cbcbd4] p-3 bg-[#5a5757] mt-[2rem] rounded-lg"
             type="text"
             placeholder="Password"
           />
-          <button className="w-[18rem] text-lg font-medium text-[#000000] h-12 px-10 bg-[#ffffff] mt-[2rem] rounded-lg">
+          <button className="w-full text-lg font-medium text-[#000000] h-12 px-10 bg-[#ffffff] mt-[2rem] rounded-lg">
             {" "}
             Sign Up
           </button>
