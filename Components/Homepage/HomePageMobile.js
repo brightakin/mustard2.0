@@ -121,7 +121,7 @@ const HomePageMobile = () => {
           alt="bigcircle"
         />
       </div>
-      <div className="w-full h-[120rem] sm:h-[160rem] px-[4rem] bg-[#ffffff]">
+      <div className="w-full h-[120rem] sm:h-[160rem] px-10 sm:px-20 bg-[#ffffff]">
         <p className="w-full h-12 text-2xl sm:text-5xl mt-[5rem] text-center font-extrabold text-[#3a3a3a]">
           Our Pay as you Grow Pricing model
         </p>
