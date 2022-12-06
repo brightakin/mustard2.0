@@ -108,7 +108,7 @@ const HomePageMobile = () => {
                 API
               </p>
             </div>
-            <p className="w-full mt-8 sm:mt-10 pr-5 h-40 text-sm sm:text-2xl text-center text-[#3a3a3a]">
+            <p className="w-full mt-8 sm:mt-10 pr-5 h-40 text-xs sm:text-2xl text-center text-[#3a3a3a]">
               Lorem ipsum dolor sit amet consectetur. Ultrices nunc lectus sem
               sit nullam blandit velit diam enim. Placerat ac id semper leo sed
               vitae. Consectetur at etiam vitae nulla.
