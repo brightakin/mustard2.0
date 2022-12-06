@@ -180,7 +180,7 @@ const HomePageMobile = () => {
           </p>
         </div>
       </div>
-      <div className="w-full pt-10 px-12 sm:px-20 h-[55rem] sm:h-[60rem] bg-[#f8f7fa]">
+      <div className="w-full pt-10 px-10 sm:px-20 h-[55rem] sm:h-[60rem] bg-[#f8f7fa]">
         <div>
           <hr className="bg-[rgb(253,188,31)] mx-auto w-16 h-[4px]" />
           <p className="w-full h-10 font-bold sm:text-6xl text-2xl mt-5 text-center text-[#3a3a3a]">
