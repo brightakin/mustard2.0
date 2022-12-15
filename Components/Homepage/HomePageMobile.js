@@ -1,272 +1,234 @@
 import { Fragment } from "react";
-import butterflyImg from "../../Assets/butterfly.png";
-import circleLinesImg from "../../Assets/circlemobile.png";
-import patriciaImg from "../../Assets/patricia.png";
-import obiexImg from "../../Assets/obiex.png";
-import carbonImg from "../../Assets/carbon.png";
 import cardImg from "../../Assets/cardmobile.png";
 import Image from "next/image";
-import bigCircleImg from "../../Assets/bigcirclemobile.png";
-import pointerLineImg from "../../Assets/pointerline.png";
-import apiImg from "../../Assets/apimobile.png";
-import atmImg from "../../Assets/atmmobile.png";
-import cutCircleImg from "../../Assets/cutcircle.png";
-import curvedLineImg from "../../Assets/curvedline.png";
-import consoleImg from "../../Assets/consolemobile.png";
-import metricsImg from "../../Assets/metricsmobile.png";
-import communityImg from "../../Assets/communitymobile.png";
-import documentationImg from "../../Assets/documentationmobile.png";
-import patriciaPictureImg from "../../Assets/patriciapicture.png";
+import homePhoneMobile from "../../Assets/homephonemobile.png";
+import happyManMobile from "../../Assets/happymanmobile.png";
+import phoneDashboardMobile from "../../Assets/phonedashboardmobile.png";
+import card2Mobile from "../../Assets/card2.png";
+import worldMobileImg from "../../Assets/worldmobile.png";
+import ladyleftImg from "../../Assets/ladyleft.png";
+import sponsorIconMobile from "../../Assets/sponsoriconmobile.png";
+import socialIconsMobile from "../../Assets/socialiconsmobile.png";
+import footerLogoImg from "../../Assets/footerlogomobile.png";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const HomePageMobile = () => {
+  const router = useRouter();
+
+  const handleRegister = () => {
+    router.push("/register");
+  };
+
   return (
     <Fragment>
-      <div className="w-full h-[100vh] sm:h-full bg-[#000000]">
-        <div className="flex flex-col gap-[14rem]">
-          <div>
-            <h1 className="text-[#f8f7fa] w-[21rem] sm:w-[42rem] mt-[10rem] ml-6 h-16 text-4xl sm:text-7xl font-bold text-left leading-[32px]">
-              API Development for Fintech Solutions
-            </h1>
-            <hr className="bg-[#fdbc1f] mt-[4rem] sm:mt-[13rem] w-32 ml-6 h-[4px]" />
-            <p className=" h-8 w-[19rem] sm:w-[45rem] text-[#f8f7fa] mt-8 sm:mt-10 text-lg sm:text-3xl font-semibold text-left leading-[20px] ml-6">
-              We provide API development and other professional tools for
-              fintechs for them to build a great solution out there.{" "}
-            </p>
-            <button className=" w-52 sm:w-64 h-14 sm:h-24 rounded-xl mt-[8rem] ml-6 hover:scale-105 duration-500 text-[#3a3a3a] text-2xl sm:text-3xl font-semibold bg-[#f8f7fa] hover:">
-              Explore Bindent
-            </button>
-          </div>
-          <div>
-            <Image
-              className=" sm:ml-[42rem] ml-[16rem] mt-[-16rem]"
-              src={circleLinesImg}
-              alt=" circlelines"
-            />
+      <div className="w-full h-[100vh] text-center sm:h-full px-6 bg-[#28a745]">
+        <h1 className="text-[#f8f7fa] w-full mt-[3rem] h-16 text-4xl sm:text-7xl font-bold text-center leading-[32px]">
+          Take Control of your money with Mustard!
+        </h1>
+        <p className=" h-8 w-full text-[#f8f7fa] mt-8 sm:mt-[12rem] text-2xl sm:text-4xl text-center leading-[30px]">
+          We’re here to help you get the best out of your money, no strings
+          attached.
+        </p>
+        <button
+          onClick={handleRegister}
+          className="w-52 sm:w-72 h-14 sm:h-24 rounded-xl mt-[8rem] hover:scale-105 duration-500 text-[#28a745] text-xl sm:text-3xl font-semibold bg-[#f8f7fa]"
+        >
+          Create an Account
+        </button>
+        <Image className="w-full" src={homePhoneMobile} alt="homephone" />
+      </div>
+      <div className="w-full pt-6 px-10 sm:px-20 h-[140rem] sm:h-[240rem] bg-[#f8f7fa]">
+        <p className="w-full h-10 font-bold sm:text-6xl text-3xl mt-5 text-center text-[#28a745]">
+          What does Mustard offers?
+        </p>
+        <Image
+          className="mt-[5rem] w-full sm:mt-[14rem]"
+          src={phoneDashboardMobile}
+          alt="phonedashboard"
+        />
+        <p className="w-full h-10 font-bold sm:text-6xl text-3xl mt-10 sm:mt-[8rem] text-center text-[#28a745]">
+          Save in Dollars & Spend Dollar easily, Anytime, Anywhere.
+        </p>
+        <p className="mt-[6rem] sm:mt-[12rem] text-center text-lg sm:text-3xl text-[#3a3a3a]">
+          Mustard uses the highest level of internet security and it is
+          protected by Comodo SSL certificate with end-to-end data encryption to
+          completely protect your data.
+        </p>
+        <Image
+          className="mt-[5rem] sm:mt-[7rem] w-full"
+          src={card2Mobile}
+          alt="card"
+        />
+        <p className="w-full h-10 font-bold sm:text-6xl text-3xl mt-10 sm:mt-[8rem] text-center text-[#28a745]">
+          Create Dollar Card for Internet transactions.
+        </p>
+        <p className="mt-[6rem] sm:mt-[8rem] text-center text-lg sm:text-3xl text-[#3a3a3a]">
+          Mustard uses the highest level of internet security and it is
+          protected by Comodo SSL certificate with end-to-end data encryption to
+          completely protect your data.
+        </p>
+        <Image
+          className="mt-[5rem] sm:mt-[8rem] w-full"
+          src={happyManMobile}
+          alt="happyman"
+        />
+        <p className="w-full h-10 font-bold sm:text-6xl text-3xl mt-10 text-center text-[#28a745]">
+          You can make your money work when you In tangible Assets.
+        </p>
+        <p className="mt-[6rem] sm:mt-[11rem] text-center text-lg sm:text-3xl text-[#3a3a3a]">
+          Mustard uses the highest level of internet security and it is
+          protected by Comodo SSL certificate with end-to-end data encryption to
+          completely protect your data.
+        </p>
+      </div>
+      <div className="w-full h-[40rem]sm:h-[60rem] py-[5rem] px-[2rem] bg-[#28a745]">
+        <div>
+          <Image className="w-full" src={worldMobileImg} alt="worldmobile" />
+          <p className="w-full text-white text-2xl sm:text-5xl mt-5 font-bold text-center ">
+            Send money to anyone, anywhere, anytime without any limitation.
+          </p>
+          <p className="w-full text-white mt-[2rem] h-[10rem] text-sm sm:text-2xl font-normal text-center ">
+            You can easily send money to Domiliciary accounts and local banks
+            without stress. You can easily send money to your loved ones and
+            they do cash pickup or send in-app through their Mustard tags.
+          </p>
+        </div>
+      </div>
+      <div className="w-full h-[50rem] py-[2rem] px-[2rem] bg-[#ffffff]">
+        <div>
+          <p className="w-full text-[#28a745] text-xl font-extrabold text-center ">
+            For every Mustard User, We provide you an Accountability Manager
+          </p>
+          <div className="h-[26rem] w-full p-[2rem] mt-16 gap-[5rem] text-[#3a3a3a] bg-white shadow-2xl">
+            <div>
+              <Image src={ladyleftImg} alt="ladyleft" />
+            </div>
+            <div>
+              <p className=" w-full text-[#3a3a3a] text-xl sm:text-2xl font-bold text-center ">
+                A better way to improve on your finances
+              </p>
+              <p className="mt-[2rem] text-xs sm:text-sm w-full h-[12rem]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
+                nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed
+                magna eget nibh in turpis. Consequat duis diam lacus arcu.
+                Faucibus venenatis felis id augue sit cursus pellentesque enim
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
+                nibh mauris, nec turpis orci lectus maecenas. Suspendisse{" "}
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div className="w-full pt-10 px-10 sm:px-20 h-[110rem] sm:h-[121rem] bg-[#f8f7fa]">
-        <div>
+      <div className="w-full h-[20rem] sm:h-[30rem] py-[5rem] px-[5rem] bg-[#f8f7fa]">
+        <p className="w-full text-2xl sm:text-5xl text-[#28a745] font-extrabold text-center ">
+          Our Partners
+        </p>
+        <Image
+          className="mt-5 w-full"
+          src={sponsorIconMobile}
+          alt="partnerslogo"
+        />
+        <Image
+          className="mt-5 w-full"
+          src={sponsorIconMobile}
+          alt="partnerslogo"
+        />
+      </div>
+      <div className="w-full h-[42rem] py-[3rem] px-[2rem] border-b-2 bg-[#ffffff]">
+        <div className="h-[30rem] w-full rounded-3xl px-[2rem] py-[2rem] bg-[#28A74533]">
           <div>
-            <hr className="bg-[rgb(253,188,31)] w-16 h-[4px]" />
-            <p className="w-full h-10 font-bold sm:text-6xl text-2xl mt-5 text-left text-[#3a3a3a]">
-              What is Bident?
+            <p
+              className="w-full text-3xl sm:text-4xl font-bold text-center
+             text-[#28A745]"
+            >
+              Take Control of your money with Mustard!
             </p>
-            <p className="h-20 w-full mt-4 sm:mt-14 text-xl sm:text-4xl font-semibold text-[#a6a6aa]">
-              The solution every fintech needs
+            <p className="w-full text-xl sm:text-2xl font-bold mt-[2rem] text-center text-[#3a3a3a] ">
+              We’re here to help you get the best out of your money, no strings
+              attached.
+            </p>
+          </div>
+          <Image
+            className="w-full mt-[3rem]"
+            src={socialIconsMobile}
+            alt="tiltphone"
+          />
+        </div>
+      </div>
+      <div className="w-full py-[5rem] px-[2rem] bg-[#ffffff]">
+        <div>
+          <Image
+            className="w-[10rem] sm:w-[20rem]"
+            src={footerLogoImg}
+            alt="footerlogo"
+          />
+        </div>
+        <div className="flex justify-between mt-5 sm:mt-10">
+          <div>
+            <p className="h-10 w-full text-2xl text-left text-[#28a745] font-bold ">
+              Features
+            </p>
+            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+              Dollar Card
+            </p>
+            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+              Save
+            </p>
+            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+              Invest
             </p>
           </div>
           <div>
-            <p className="w-[16rem] sm:w-[34rem] h-40 sm:text-2xl text-lg text-[#3a3a3a]">
-              Lorem ipsum dolor sit amet consectetur. Ultrices nunc lectus sem
-              sit nullam blandit velit diam enim. Placerat ac id semper leo sed
-              vitae. Consectetur at etiam vitae nulla non ante iaculis.
-              Vestibulum diam turpis dignissim ac suspendisse a sagittis.
+            <p className="h-[43px] w-full text-2xl text-left text-[#28a745] font-bold ">
+              Company
+            </p>
+            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+              Blog
+            </p>
+            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+              Join Our Team
+            </p>
+            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+              About Us
             </p>
           </div>
         </div>
-        <div className="mt-[13rem]">
+        <div className="flex justify-between mt-5">
           <div>
-            <hr className="bg-[rgb(253,188,31)] w-16 h-[4px]" />
-            <p className="w-full h-10 font-bold sm:text-6xl text-2xl mt-5 text-left text-[#3a3a3a]">
-              Our Products
+            <p className="h-[43px] w-full text-2xl text-left text-[#28a745] font-bold ">
+              Help
             </p>
-            <p className="h-20 w-full mt-4 sm:mt-14 text-xl sm:text-4xl font-semibold text-[#a6a6aa]">
-              The solution every fintech needs
+            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+              Get help
             </p>
-          </div>
-          <div className="sm:w-[35rem] w-[20rem] mx-auto px-10 py-2 rounded-xl h-68 sm:h-[20rem] bg-[#ffffff]">
-            <div className="mt-10 flex gap-[2rem]">
-              <Image src={cardImg} alt="card" />
-              <p className="w-56 sm:w-64 h-8 text-lg sm:text-3xl font-bold text-[#3a3a3a] ">
-                Virtual Dollar Card
-              </p>
-            </div>
-            <p className="w-[16rem] sm:w-[29rem] mt-4 pr-5 h-40 text-sm sm:text-2xl text-[#3a3a3a]">
-              Lorem ipsum dolor sit amet consectetur. Ultrices nunc lectus sem
-              sit nullam blandit velit diam enim. Placerat ac id semper leo sed
-              vitae. Consectetur at etiam vitae nulla.
+            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+              FAQs
+            </p>{" "}
+            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+              <Link href="/contactus">Contact us</Link>
             </p>
           </div>
-          <div className="w-[20rem] sm:w-[35rem] mx-auto px-10 py-2 rounded-xl mt-7 h-68 bg-[#ffffff]">
-            <div className="mt-10 flex gap-[2rem]">
-              <Image src={atmImg} alt="card" />
-              <p className="w-56 h-8 sm:w-64 text-lg sm:text-3xl font-bold text-[#3a3a3a] ">
-                Dedicated Virtual Account Number
-              </p>
-            </div>
-            <p className="w-[16rem] sm:w-[29rem] mt-8 sm:mt-10 pr-5 h-40 text-sm sm:text-2xl text-[#3a3a3a]">
-              Lorem ipsum dolor sit amet consectetur. Ultrices nunc lectus sem
-              sit nullam blandit velit diam enim. Placerat ac id semper leo sed
-              vitae. Consectetur at etiam vitae nulla.
+          <div>
+            <p className="h-[43px] w-full text-2xl text-left text-[#28a745] font-bold ">
+              Transparency
             </p>
-          </div>
-          <div className="w-[20rem] sm:w-[35rem] mx-auto px-10 py-2 rounded-xl mt-7 h-68 bg-[#ffffff]">
-            <div className="mt-10 flex gap-[2rem]">
-              <Image src={apiImg} alt="card" />
-              <p className="w-56 h-8 sm:w-64 text-lg sm:text-3xl font-bold text-[#3a3a3a] ">
-                API
-              </p>
-            </div>
-            <p className="w-[16rem] sm:w-[29rem] mt-8 sm:mt-10 pr-5 h-40 text-sm sm:text-2xl text-[#3a3a3a]">
-              Lorem ipsum dolor sit amet consectetur. Ultrices nunc lectus sem
-              sit nullam blandit velit diam enim. Placerat ac id semper leo sed
-              vitae. Consectetur at etiam vitae nulla.
+            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+              Terms & Condition
+            </p>
+            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+              Privacy policy
+            </p>
+            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+              Investment policy
             </p>
           </div>
         </div>
         <Image
-          className=" mt-5 sm:mt-6 ml-[14.5rem] sm:ml-[37.5rem]"
-          src={bigCircleImg}
-          alt="bigcircle"
+          className="w-full mt-[3rem]"
+          src={socialIconsMobile}
+          alt="tiltphone"
         />
-      </div>
-      <div className="w-full h-[120rem] sm:h-[160rem] px-[4rem] bg-[#ffffff]">
-        <p className="w-full h-12 text-2xl sm:text-5xl mt-[5rem] text-center font-extrabold text-[#3a3a3a]">
-          Our Pay as you Grow Pricing model
-        </p>
-        <p className=" h-40 w-[19rem] sm:w-[30rem] mt-8 sm:mt-16 text-[#a6a6aa] mx-auto text-sm sm:text-2xl text-center font-medium">
-          You don’t have to worry about a fixed pricing, you only as your card
-          transactions and issuance increases.
-        </p>
-        <div>
-          <hr className="bg-[rgb(253,188,31)] w-16 h-[4px]" />
-          <p className="w-full h-10 font-bold text-2xl sm:text-3xl mt-5 text-left text-[#3a3a3a]">
-            A better Experience for your developers at every step
-          </p>
-          <p className="h-20 w-full mt-20 text-sm sm:text-2xl font-semibold text-[#a6a6aa]">
-            Zenfin open source and pro tools have helped millions of ApI
-            developers, teams and finance organizations deliver great APIs.
-          </p>
-        </div>
-        <Image className="w-full" src={consoleImg} alt="console" />
-        <div className="w-full h-[16rem] sm:h-[24rem] mt-20 border-2 border-[#a6a6aa] rounded-xl">
-          <Image
-            className=" w-10 h-10 mt-[3rem] mx-auto"
-            src={documentationImg}
-            alt="documentation"
-          />
-          <p className="w-full h-8 mt-8 text-center text-xl sm:text-3xl font-bold text-[#000000]">
-            Documentation
-          </p>
-          <p className="w-full h-16 text-sm sm:text-2xl sm:mt-5 text-center text-[#3a3a3a]">
-            Easy-to-edit guides to help developers get started.
-          </p>
-        </div>
-        <div className="w-full h-[16rem] sm:h-[24rem] mt-20 border-2 border-[#a6a6aa] rounded-xl">
-          <Image
-            className=" w-10 h-10 mt-[3rem] mx-auto"
-            src={metricsImg}
-            alt="documentation"
-          />
-          <p className="w-full h-8 mt-8 text-center text-xl sm:text-3xl font-bold text-[#000000]">
-            Metrics
-          </p>
-          <p className="w-full h-16 text-sm sm:text-2xl sm:mt-5 text-center text-[#3a3a3a]">
-            Easy-to-edit guides to help developers get started.
-          </p>
-        </div>
-        <div className="w-full h-[16rem] sm:h-[24rem] mt-20 border-2 border-[#a6a6aa] rounded-xl">
-          <Image
-            className=" w-10 h-10 mt-[3rem] mx-auto"
-            src={communityImg}
-            alt="documentation"
-          />
-          <p className="w-full h-8 mt-8 text-center text-xl sm:text-3xl font-bold text-[#000000]">
-            Community
-          </p>
-          <p className="w-full h-16 text-sm sm:text-2xl sm:mt-5 text-center text-[#3a3a3a]">
-            Easy-to-edit guides to help developers get started.
-          </p>
-        </div>
-      </div>
-      <div className="w-full pt-10 px-12 sm:px-20 h-[55rem] sm:h-[60rem] bg-[#f8f7fa]">
-        <div>
-          <hr className="bg-[rgb(253,188,31)] w-16 h-[4px]" />
-          <p className="w-full h-10 font-bold sm:text-6xl text-2xl mt-5 text-left text-[#3a3a3a]">
-            Get Started
-          </p>
-          <p className="h-20 w-full mt-4 sm:mt-14 text-xl sm:text-4xl font-semibold text-[#a6a6aa]">
-            Build the solution the world needs
-          </p>
-        </div>
-        <form className=" w-full px-[1rem] py-[3rem] h-[30rem] bg-[#3a3a3a] rounded-2xl ">
-          <p className="w-64 h-10 text-[#cbcbd4] text-xl font-bold">
-            Get Started here
-          </p>
-          <input
-            className="w-full text-sm text-[#cbcbd4] p-3 bg-[#5a5757] mt-[2rem] rounded-lg"
-            type="text"
-            placeholder="Business Name"
-          />
-          <input
-            className=" w-full text-sm text-[#cbcbd4] p-3  bg-[#5a5757] mt-[2rem] rounded-lg"
-            type="text"
-            placeholder="Your Email"
-          />
-          <input
-            className="w-full text-sm text-[#cbcbd4] p-3 bg-[#5a5757] mt-[2rem] rounded-lg"
-            type="text"
-            placeholder="Password"
-          />
-          <button className="w-full text-lg font-medium text-[#000000] h-12 px-10 bg-[#ffffff] mt-[2rem] rounded-lg">
-            {" "}
-            Sign Up
-          </button>
-        </form>
-      </div>
-      <div className="h-[30rem] w-full pl-2  bg-gradient-to-r from-[#93939c] via-transparent">
-        <div className="flex">
-          <div className="mt-[2rem]">
-            <p className="h-10 w-40 text-lg text-left text-[#000000] font-bold ">
-              Products
-            </p>
-            <p className="h-10 w-72 text-sm text-left text-[#3a3a3a] font-bold ">
-              Virtual Dollar Cards
-            </p>
-            <p className="h-10 w-72 text-sm text-left text-[#3a3a3a] font-bold ">
-              Dedicated User Account
-            </p>
-            <p className="h-10 w-40 text-sm text-left text-[#3a3a3a] font-bold ">
-              Docs
-            </p>
-            <p className="h-10 w-40 text-sm text-left text-[#3a3a3a] font-bold ">
-              Metrics
-            </p>
-          </div>
-          <div className="mt-[2rem]">
-            <p className="h-[43px] text-lg text-left text-[#000000] font-bold ">
-              Resources
-            </p>
-            <p className="h-10 w-40 text-sm text-left text-[#3a3a3a] font-bold ">
-              Pricing
-            </p>
-            <p className="h-10 w-72 text-sm text-left text-[#3a3a3a] font-bold ">
-              Customer Stories
-            </p>
-            <p className="h-10 w-40 text-sm text-left text-[#3a3a3a] font-bold ">
-              Zenfin Docs
-            </p>
-          </div>
-        </div>
-
-        <div className="mt-[2rem]">
-          <p className="h-[43px] text-lg text-left text-[#000000] font-bold ">
-            Company
-          </p>
-          <p className="h-10 w-40 text-sm text-left text-[#3a3a3a] font-bold ">
-            Team
-          </p>
-          <p className="h-10 w-72 text-sm text-left text-[#3a3a3a] font-bold ">
-            Career Support
-          </p>{" "}
-          <a
-            className="h-10 w-72 text-sm text-left text-[#3a3a3a] font-bold "
-            href="/contactus"
-          >
-            Contact Support
-          </a>
-        </div>
       </div>
     </Fragment>
   );
