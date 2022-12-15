@@ -1,339 +1,319 @@
-import butterflyImg from "../../Assets/butterfly.png";
-import circleLinesImg from "../../Assets/circlelines.png";
-import patriciaImg from "../../Assets/patricia.png";
-import obiexImg from "../../Assets/obiex.png";
-import carbonImg from "../../Assets/carbon.png";
-import cardImg from "../../Assets/card.png";
 import Image from "next/image";
 import { Fragment } from "react";
-import bigCircleImg from "../../Assets/bigcircle.png";
-import pointerLineImg from "../../Assets/pointerline.png";
-import apiImg from "../../Assets/api.png";
-import atmImg from "../../Assets/atm.png";
-import cutCircleImg from "../../Assets/cutcircle.png";
-import curvedLineImg from "../../Assets/curvedline.png";
-import consoleImg from "../../Assets/console.png";
-import metricsImg from "../../Assets/metrics.png";
-import communityImg from "../../Assets/community.png";
-import documentationImg from "../../Assets/documentation.png";
-import patriciaPictureImg from "../../Assets/patriciapicture.png";
+import happyManImg from "../../Assets/happyman.png";
 import { useRouter } from "next/router";
+import rectangleImg from "../../Assets/rectangle.png";
+import phoneDashboardImg from "../../Assets/dashboard.png";
+import card2Img from "../../Assets/card2.png";
+import homePagePhone from "../../Assets/homepagephone.png";
+import worldImg from "../../Assets/world.png";
+import ladyleftImg from "../../Assets/ladies.png";
+import partnersLogoImg from "../../Assets/partnerslogo.png";
+import tiltPhoneImg from "../../Assets/tiltphone.png";
+import footerLogoImg from "../../Assets/footerlogo.png";
+import storeIconsImg from "../../Assets/storeicons.png";
+import Link from "next/link";
+import socialIconsImg from "../../Assets/socialicons.png";
 
 const HomePageDesktop = () => {
   const router = useRouter();
-  const handleDashboard = (e) => {
+  const handleRegister = (e) => {
     e.preventDefault();
-    router.push("/dashboard");
+    router.push("/register");
   };
 
   return (
     <Fragment>
-      <div className="w-full h-[100vh] bg-[#000000]">
+      <div className="w-full h-[100%] bg-[#28a745]">
         <div className="flex gap-[14rem]">
           <div>
-            <h1 className="text-[#f8f7fa] w-[28rem] mt-6 ml-12 h-44 text-5xl font-bold text-left leading-[60px]">
-              API Development for Fintech Solutions
+            <h1 className="text-[#f8f7fa] w-[30rem] mt-6 ml-12 h-44 text-5xl font-bold text-left leading-[60px]">
+              Take Control of your money with Mustard!
             </h1>
-            <hr className="bg-[#fdbc1f] w-32 ml-12 h-[4px]" />
-            <p className=" h-36 w-[28rem] text-[#f8f7fa] mt-8 text-2xl font-semibold text-left leading-[40px] ml-12">
-              We provide API development and other professional tools for
-              fintechs for them to build a great solution out there.{" "}
+            <p className=" h-36 w-[28rem] text-[#f8f7fa] mt-4 text-2xl font-semibold text-left leading-[40px] ml-12">
+              We’re here to help you get the best out of your money, no strings
+              attached.
             </p>
             <button
-              onClick={handleDashboard}
-              className=" w-52 h-14 rounded-xl mt-4 ml-12 hover:scale-105 duration-500 text-[#3a3a3a] text-2xl font-semibold bg-[#f8f7fa] hover:"
+              onClick={handleRegister}
+              className=" w-56 h-14 rounded-xl mt-4 ml-12 hover:scale-105 duration-500 text-[#28a745] text-2xl font-semibold bg-[#f8f7fa] hover:"
             >
-              Explore Bindent
+              Create an Account
             </button>
           </div>
           <div>
             <Image
               className="w-[30rem] h-[28rem]"
-              src={butterflyImg}
+              src={homePagePhone}
               alt="butterfly"
-            />
-            <Image
-              className="w-full mt-8 h-[11rem]"
-              src={circleLinesImg}
-              alt=" circlelines"
             />
           </div>
         </div>
-      </div>
-      <div className="w-full pt-10 h-[75rem] bg-[#f8f7fa]">
-        <div className="flex gap-[14rem] lg:gap-0 lg:justify-between">
-          <div>
-            <hr className="bg-[rgb(253,188,31)] w-16 ml-12 h-[4px]" />
-            <p className="w-full h-10 font-bold text-2xl ml-12 mt-5 text-left text-[#3a3a3a]">
-              What is Zenfin?
-            </p>
-            <p className="h-20 w-full ml-12 mt-4 text-xl font-semibold text-[#a6a6aa]">
-              The solution every fintech needs
+        <div className="flex justify-between ml-12 mr-2">
+          <div className="mt-[3rem]">
+            <Image src={rectangleImg} alt="rectangle" />
+            <p className="text-2xl mt-3 font-bold text-left text-[#ffffff] ">
+              Mustard Key figures
             </p>
           </div>
-          <div>
-            <p className="w-[25rem] lg:w-[40rem] mr-10 h-48 text-lg text-[#3a3a3a] mt-2">
-              Lorem ipsum dolor sit amet consectetur. Ultrices nunc lectus sem
-              sit nullam blandit velit diam enim. Placerat ac id semper leo sed
-              vitae. Consectetur at etiam vitae nulla non ante iaculis.
-              Vestibulum diam turpis dignissim ac suspendisse a sagittis.
+          <div className="mt-[5rem]">
+            <p className=" text-xl text-center text-[#ffffff] font-bold ">
+              Active accounts
             </p>
+            <p className="text-3xl text-center text-[#ffffff] font-bold ">
+              10K+
+            </p>
+          </div>
+          <div className="mt-[5rem]">
+            <p className="text-xl text-center text-[#ffffff] font-bold ">
+              Total transactions
+            </p>
+            <p className="text-3xl text-center text-[#ffffff] font-bold ">
+              100K+
+            </p>
+          </div>
+          <div className="mt-[5rem]">
+            <p className="text-xl text-center text-[#ffffff] font-bold ">
+              Total payouts
+            </p>
+            <p className=" text-3xl text-center text-[#ffffff] font-bold ">
+              500.3M
+            </p>
+          </div>
+          <div className="mt-[5rem]">
+            <p className="text-xl text-center text-[#ffffff] font-bold ">
+              Total Investment
+            </p>
+            <p className="text-3xl text-center text-[#ffffff] font-bold ">
+              10.3K+
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="w-full pt-10 h-[115rem] bg-[#ffffff] px-12">
+        <div className="flex gap-[14rem] lg:gap-0 lg:justify-between">
+          <div className="">
+            <p className="h-[12rem] w-[30rem] text-4xl font-bold text-[#28a745] text-left ">
+              Save in Dollars & Spend Dollar easily, Anytime, Anywhere.
+            </p>
+            <p className="h-[10rem] w-[38rem] text-xl text-left text-[#3a3a3a] ">
+              Mustard uses the highest level of internet security and it is
+              protected by Comodo SSL certificate with end-to-end data
+              encryption to completely protect your data.
+            </p>
+            <a
+              href="/"
+              className="h-[4rem] w-[43rem] text-2xl text-left text-[#28a745] "
+            >
+              Start saving in dollar on our new app{" "}
+              <span className="text-[20px] text-[#28a745] m-2 ">&#8594;</span>
+            </a>
+          </div>
+          <div>
+            <Image
+              className="z-10 w-[38rem] h-[28rem]"
+              src={phoneDashboardImg}
+              alt="phoneDashboard"
+            />
           </div>
         </div>
         <div className="flex gap-[25rem] lg:gap-0 lg:justify-between">
-          <div>
-            <hr className="bg-[rgb(253,188,31)] w-16 ml-12 h-[4px]" />
-            <p className="w-full h-10 font-bold text-2xl ml-12 mt-10 text-left text-[#3a3a3a]">
-              Our Products
-            </p>
-            <p className="h-20 w-full ml-12 mt-8 text-xl font-semibold text-[#a6a6aa]">
-              The solution every fintech needs
-            </p>
-          </div>
-          <div className="flex w-[100rem] lg:w-[36rem] rounded-xl mr-28 h-56 bg-[#ffffff]">
-            <Image className=" h-40 w-52" src={cardImg} alt="card" />
-            <div className="mt-10">
-              <p className="w-56 h-8 text-lg lg:text-xl font-bold text-[#3a3a3a] ">
-                Virtual Dollar Card
-              </p>
-              <p className="w-[13rem] lg:w-[25rem] pr-5 h-40 text-sm lg:text-lg text-[#3a3a3a]">
-                Lorem ipsum dolor sit amet consectetur. Ultrices nunc lectus sem
-                sit nullam blandit velit diam enim. Placerat ac id semper leo
-                sed vitae. Consectetur at etiam vitae nulla.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="flex justify-between mr-28 mt-[3rem]">
-          <div>
-            <Image
-              className="absolute h-[30rem] w-[30rem] left-[2rem]"
-              src={bigCircleImg}
-              alt="bigcircle"
-            />
-            <Image
-              className="absolute z-20 h-[25rem] w-[25rem] left-[12rem]"
-              src={pointerLineImg}
-              alt="pointerline"
-            />
-          </div>
-          <div>
-            <div className="flex w-[25rem] lg:w-[36rem] rounded-xl h-56 bg-[#ffffff]">
-              <Image
-                className=" h-28 lg:h-48 w-40 lg:w-60"
-                src={atmImg}
-                alt="card"
-              />
-              <div className="mt-10">
-                <p className="w-full h-8 text-lg lg:text-xl font-bold text-[#3a3a3a] ">
-                  Dedicated Virtual Account Number
-                </p>
-                <p className="w-[15rem] lg:w-[25rem] pr-5 h-40 text-sm lg:text-lg text-[#3a3a3a]">
-                  Lorem ipsum dolor sit amet consectetur. Ultrices nunc lectus
-                  sem sit nullam blandit velit diam enim. Placerat ac id semper
-                  leo sed vitae. Consectetur at etiam vitae nulla.
-                </p>
-              </div>
-            </div>
-            <div className="flex absolute z-10 w-[25rem] lg:w-[36rem] mt-[3rem] rounded-xl mr-10 h-56 bg-[#ffffff]">
-              <Image className="h-48 w-60" src={apiImg} alt="card" />
-              <div className="mt-10">
-                <p className="w-56 h-8 text-xl font-bold text-[#3a3a3a] ">
-                  APIs
-                </p>
-                <p className="w-[15rem] lg:w-[25rem] pr-5 h-40 text-sm lg:text-lg text-[#3a3a3a]">
-                  Lorem ipsum dolor sit amet consectetur. Ultrices nunc lectus
-                  sem sit nullam blandit velit diam enim. Placerat ac id semper
-                  leo sed vitae. Consectetur at etiam vitae nulla.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <Image
-          className="ml-[60rem] relative mt-[4.4rem]"
-          src={cutCircleImg}
-          alt="cutcircle"
-        />
-      </div>
-      <div className="w-full h-[145rem] bg-[#ffffff]">
-        <div>
-          <p className="w-full h-12 text-4xl mt-[5rem] text-center font-extrabold text-[#3a3a3a]">
-            Our Pay as you Grow Pricing model
-          </p>
-          <p className=" h-40 w-[30rem] mx-auto mt-8 text-[#a6a6aa] text-2xl text-center font-medium">
-            You don’t have to worry about a fixed pricing, you only as your card
-            transactions and issuance increases.
-          </p>
-          {/* <Image src={curvedLineImg} alt="curvedline" /> */}
-        </div>
-        <div className="flex gap-[12rem] mr-5 lg:mr-0 lg:gap-[16rem] mt-[1rem]">
-          <div>
-            <hr className="bg-[rgb(253,188,31)] w-16 ml-12 h-[4px]" />
-            <p className="w-[34rem] h-10 font-bold text-2xl ml-12 mt-2 text-left text-[#3a3a3a]">
-              A better Experience for your developers at every step
-            </p>
-            <p className="h-20 w-[30rem] ml-12 mt-[2rem] text-xl font-semibold text-[#a6a6aa]">
-              Zenfin open source and pro tools have helped millions of ApI
-              developers, teams and finance organizations deliver great APIs.
-            </p>
-          </div>
-          <div>
-            <Image
-              className="w-[20rem] h-[11rem]"
-              src={consoleImg}
-              alt="console"
-            />
-          </div>
-        </div>
-        <div className="flex mt-[6rem] gap-2 lg:gap-[5rem] justify-center">
-          <div className="w-[30rem] h-[16rem] border-2 border-[#a6a6aa] rounded-xl">
-            <Image
-              className=" w-10 h-10 mt-[3rem] mx-auto"
-              src={documentationImg}
-              alt="documentation"
-            />
-            <p className="w-full h-8 mt-8 text-center text-lg font-bold text-[#000000]">
-              Documentation
-            </p>
-            <p className="w-full h-16 text-sm text-center text-[#3a3a3a]">
-              Easy-to-edit guides to help developers get started.
-            </p>
-          </div>
-          <div className="w-[30rem] h-[16rem] border-2 border-[#a6a6aa] rounded-xl">
-            {" "}
-            <Image
-              className="mt-[3rem] mx-auto w-10 h-10"
-              src={metricsImg}
-              alt="metrics"
-            />
-            <p className="w-full h-8 mt-8 text-center text-lg font-bold text-[#000000]">
-              Metrics
-            </p>
-            <p className="w-full h-16 text-sm text-center text-[#3a3a3a]">
-              Easy-to-edit guides to help developers get started.
-            </p>
-          </div>
-        </div>
-        <div className="w-[30rem] mt-[4rem] mx-auto h-[16rem] border-2 border-[#a6a6aa] rounded-xl">
-          {" "}
           <Image
-            className="mt-[3rem] mx-auto w-10 h-10"
-            src={communityImg}
-            alt="community"
+            className="mt-[10rem] w-[30rem] h-[28rem] "
+            src={card2Img}
+            alt="img"
           />
-          <p className="w-full h-8 text-center text-lg font-bold mt-8 text-[#000000]">
-            Community
-          </p>
-          <p className="w-full h-16 text-sm text-center text-[#3a3a3a]">
-            Changelog and more to keep users in the loop.
-          </p>
+          <div className=" mt-[10rem] ">
+            <p className="h-[10rem] w-[28rem] text-4xl font-bold text-[#28a745] text-left ">
+              Create Dollar Card for Internet transactions.
+            </p>
+            <p className="h-[8rem] w-[38rem] text-xl text-left text-[#3a3a3a] ">
+              Mustard uses the highest level of internet security and it is
+              protected by Comodo SSL certificate with end-to-end data
+              encryption to completely protect your data.
+            </p>
+            <a
+              href="/"
+              className="h-[4rem] w-[43rem] text-2xl text-left text-[#28a745] "
+            >
+              Start saving in dollar on our new app{" "}
+              <span className="text-[20px] text-[#28a745] m-2 ">&#8594;</span>
+            </a>
+          </div>
         </div>
-        <div className="flex gap-14 w-[52rem] mt-[6rem] h-[18rem] bg-[#f8f7fa] rounded-2xl mx-auto">
+        <div className="flex gap-[14rem] mt-[10rem] lg:gap-0 lg:justify-between">
+          <div className="">
+            <p className="h-[12rem] w-[30rem] text-4xl font-bold text-[#28a745] text-left ">
+              You can make your money work when you In tangible Assets.
+            </p>
+            <p className="h-[10rem] w-[38rem] text-xl text-left text-[#3a3a3a] ">
+              Mustard uses the highest level of internet security and it is
+              protected by Comodo SSL certificate with end-to-end data
+              encryption to completely protect your data.
+            </p>
+            <a
+              href="/"
+              className="h-[4rem] w-[43rem] text-2xl text-left text-[#28a745] "
+            >
+              Start saving in dollar on our new app{" "}
+              <span className="text-[20px] text-[#28a745] m-2 ">&#8594;</span>
+            </a>
+          </div>
           <div>
             <Image
-              className="w-[25rem] h-[18rem]"
-              src={patriciaPictureImg}
-              alt="patriciapicture"
+              className="z-10 w-[38rem] h-[32rem]"
+              src={happyManImg}
+              alt="happyman"
             />
-          </div>
-          <div>
-            <p className="w-[22rem] h-40 mt-[2rem] text-lg text-[#3a3a3a] font-medium">
-              Lorem ipsum dolor sit amet consectetur. Ultrices nunc lectus sem
-              sit nullam blandit velit diam enim. Placerat ac id semper leo sed
-              vitae. Consectetur at etiam vitae nulla.
-            </p>
-            <p className="w-32 h-8 text-lg font-bold text-[#3a3a3a]">
-              Community
-            </p>
-            <p className="h-8 w-40 text-lg text-[#a6a6aa]">Hanu, Patricia</p>
           </div>
         </div>
-        <div className="flex lg:justify-center mt-[10rem]">
-          <div>
-            <hr className="bg-[rgb(253,188,31)] w-16 ml-12 h-[4px]" />
-            <p className="w-[34rem] h-10 font-bold text-2xl ml-12 mt-10 text-left text-[#3a3a3a]">
-              Get Started
-            </p>
-            <p className="h-20 w-[26rem] ml-12 mt-[1rem] text-xl font-medium text-[#a6a6aa]">
-              Build the solution the world needs.
-            </p>
-          </div>
-          <form className=" w-[26rem] lg:w-[36rem] px-[3rem] py-[3rem] h-[30rem] bg-[#3a3a3a] rounded-3xl ">
-            <p className="w-64 h-10 text-[#cbcbd4] text-xl font-bold">
-              Get Started here
-            </p>
-            <input
-              className="w-[21rem] lg:w-[30rem] text-sm text-[#cbcbd4] p-5 bg-[#5a5757] mt-[2rem] rounded-3xl"
-              type="text"
-              placeholder="Business Name"
-            />
-            <input
-              className=" w-[21rem] lg:w-[30rem] text-sm text-[#cbcbd4] p-5  bg-[#5a5757] mt-[2rem] rounded-3xl"
-              type="text"
-              placeholder="Your Email"
-            />
-            <input
-              className="w-[21rem] lg:w-[30rem] text-sm text-[#cbcbd4] p-5 bg-[#5a5757] mt-[2rem] rounded-3xl"
-              type="text"
-              placeholder="Password"
-            />
-            <button className="w-[21rem] lg:w-[30rem] text-xl font-medium text-[#000000] h-16 px-10 bg-[#ffffff] mt-[2rem] rounded-3xl">
-              {" "}
-              Sign Up
-            </button>
-          </form>
+        <div className="flex justify-between mr-28 mt-[3rem]"></div>
+      </div>
+      <div className="w-full h-[65rem] py-[5rem] px-[5rem] bg-[#28a745]">
+        <div>
+          <p className="h-[8rem] w-full text-white text-5xl font-bold text-right ">
+            Send money to anyone, anywhere, anytime without any limitation.
+          </p>
+          <p className="w-full text-white h-[10rem] text-xl font-normal text-right ">
+            You can easily send money to Domiliciary accounts and local banks
+            without stress. You can easily send money to your loved ones and
+            they do cash pickup or send in-app through their Mustard tags.
+          </p>
+          <Image className="" src={worldImg} alt="world" />
         </div>
       </div>
-      <div className="h-[30rem] w-full flex pl-5 justify-start  bg-gradient-to-r from-[#93939c] via-transparent">
-        <div className="mt-[10rem]">
-          <p className="h-10 w-40 text-xl text-left text-[#000000] font-bold ">
-            Products
+      <div className="w-full h-[50rem] py-[5rem] px-[5rem] bg-[#ffffff]">
+        <div>
+          <p className="w-full text-[#28a745] text-4xl font-extrabold text-center ">
+            For every Mustard User, We provide you an Accountability Manager
           </p>
-          <p className="h-10 w-72 text-lg text-left text-[#3a3a3a] font-bold ">
-            Virtual Dollar Cards
+          <div className="flex h-[20rem] w-full p-[3rem] mt-16 gap-[5rem] text-[#3a3a3a] bg-white shadow-2xl">
+            <div>
+              <Image className="" src={ladyleftImg} alt="ladyleft" />
+            </div>
+            <div>
+              <p className="h-[3rem] w-full text-[#3a3a3a] text-3xl font-bold text-left ">
+                A better way to improve on your finances
+              </p>
+              <p className="mt-[2rem] w-full h-[12rem]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
+                nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed
+                magna eget nibh in turpis. Consequat duis diam lacus arcu.
+                Faucibus venenatis felis id augue sit cursus pellentesque enim
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
+                nibh mauris, nec turpis orci lectus maecenas. Suspendisse{" "}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="w-full h-[20rem] py-[5rem] px-[5rem] bg-[#f8f7fa]">
+        <p className="w-full text-5xl text-[#28a745] font-extrabold text-center ">
+          Our Partners
+        </p>
+        <Image className="mt-5" src={partnersLogoImg} alt="partnerslogo" />
+      </div>
+      <div className="w-full h-[42rem] py-[5rem] px-[5rem] border-b-2 bg-[#ffffff]">
+        <div className="flex h-[30rem] w-full rounded-3xl px-[2rem] bg-[#28A74533]">
+          <div>
+            <p className="h-[8rem] w-full text-4xl font-bold text-left text-[#28A745] mt-[4rem] ">
+              Take Control of your money with Mustard!
+            </p>
+            <p className="h-[4rem] w-full text-2xl font-bold text-left text-[#3a3a3a] ">
+              We’re here to help you get the best out of your money, no strings
+              attached.
+            </p>
+            <button
+              type="submit"
+              className="bg-[#28a745] text-xl font-bold w-56 h-[4rem] text-[#ffffff] rounded-[20px] cursor-pointer mt-[4rem] hover:scale-105 duration-500"
+            >
+              Create an Account
+            </button>
+          </div>
+          <Image className="" src={tiltPhoneImg} alt="tiltphone" />
+        </div>
+      </div>
+      <div className="w-full flex gap-[7rem] py-[5rem] px-[5rem] bg-[#ffffff]">
+        <div>
+          <Image className="w-[10rem]" src={footerLogoImg} alt="footerlogo" />
+        </div>
+        <div>
+          <p className="h-10 w-full text-base text-left text-[#28a745] font-bold ">
+            Features
           </p>
-          <p className="h-10 w-72 text-lg text-left text-[#3a3a3a] font-bold ">
-            Dedicated User Account
+          <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
+            Dollar Card
           </p>
-          <p className="h-10 w-40 text-lg text-left text-[#3a3a3a] font-bold ">
-            Docs
+          <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
+            Save
           </p>
-          <p className="h-10 w-40 text-lg text-left text-[#3a3a3a] font-bold ">
-            Metrics
+          <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
+            Invest
           </p>
         </div>
-        <div className="mt-[10rem]">
-          <p className="h-[43px] w-[206px] text-xl text-left text-[#000000] font-bold ">
-            Resources
-          </p>
-          <p className="h-10 w-40 text-lg text-left text-[#3a3a3a] font-bold ">
-            Pricing
-          </p>
-          <p className="h-10 w-72 text-lg text-left text-[#3a3a3a] font-bold ">
-            Customer Stories
-          </p>
-          <p className="h-10 w-40 text-lg text-left text-[#3a3a3a] font-bold ">
-            Zenfin Docs
-          </p>
-        </div>
-        <div className="mt-[10rem]">
-          <p className="h-[43px] w-[206px] text-xl text-left text-[#000000] font-bold ">
+        <div>
+          <p className="h-[43px] w-full text-base text-left text-[#28a745] font-bold ">
             Company
           </p>
-          <p className="h-10 w-40 text-lg text-left text-[#3a3a3a] font-bold ">
-            Team
+          <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
+            Blog
           </p>
-          <p className="h-10 w-72 text-lg text-left text-[#3a3a3a] font-bold ">
-            Career Support
-          </p>{" "}
-          <a
-            className="h-10 w-72 text-lg text-left text-[#3a3a3a] font-bold "
-            href="/contactus"
-          >
-            Contact Support
-          </a>
+          <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
+            Join Our Team
+          </p>
+          <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
+            About Us
+          </p>
         </div>
+        <div>
+          <p className="h-[43px] w-full text-base text-left text-[#28a745] font-bold ">
+            Help
+          </p>
+          <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
+            Get help
+          </p>
+          <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
+            FAQs
+          </p>{" "}
+          <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
+            <Link href="/contactus">Contact us</Link>
+          </p>
+        </div>
+        <div>
+          <p className="h-[43px] w-full text-base text-left text-[#28a745] font-bold ">
+            Transparency
+          </p>
+          <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
+            Terms & Condition
+          </p>
+          <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
+            Privacy policy
+          </p>
+          <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
+            Investment policy
+          </p>
+        </div>
+      </div>
+      <div>
+        <Image
+          className="w-[18rem] ml-[4rem]"
+          src={storeIconsImg}
+          alt="storeicons"
+        />
+        <p className="text-[#28a745] w-full text-xl ml-[4rem] font-bold text-left ">
+          Contact
+        </p>
+        <a
+          href="/"
+          className="text-[#28a745] ml-[4rem] w-full text-sm font-normal text-left "
+        >
+          help@mustard.ng
+        </a>
+        <Image
+          className=" ml-[4rem] w-[10rem]"
+          src={socialIconsImg}
+          alt="socialicons"
+        />
       </div>
     </Fragment>
   );

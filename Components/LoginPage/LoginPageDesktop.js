@@ -1,58 +1,75 @@
-import blackCardImg from "../../Assets/blackcard.png";
 import Image from "next/image";
-import circleLinesImg from "../../Assets/circlelines.png";
+import { useRouter } from "next/router";
+import { Fragment } from "react";
+import icon from "../../Assets/icon.png";
 
 const LoginPageDesktop = () => {
+  const router = useRouter();
+  const handleSubmit = () => {
+    router.push("/verify");
+  };
+
   return (
-    <div className="flex w-full h-[52rem] gap-32">
-      <div className="w-[33rem] h-[52rem] bg-[#000000]">
-        <Image src={blackCardImg} alt="blackcard" />
-        <Image className="z-10 " src={circleLinesImg} alt="circlelines" />
+    <Fragment>
+      <div className="container">
+        <div className="layer"></div>
       </div>
-      <div className="h-[40rem] w-[49rem] mt-[2rem] mr-10">
-        <h1 className=" h-10 w-72 text-[30px] font-normal text-[##a3a3a] leading-[40px] text-left ">
-          Sign In
-        </h1>
-        <p className=" h-8 w-[27rem] mt-6 text-[14px] font-normal text-[#a6a6aa] text-left ">
-          Sign in to access your dashboard
-        </p>
-        <div className=" mt-7">
-          <label>Work Email</label>
+      <main className="absolute top-24 left-[15rem] xl:left-[32rem] w-[40rem] px-[4rem] py-[3rem] h-[32rem] bg-[#ffffff] rounded-[30px] ">
+        <div className="flex justify-between">
+          <div>
+            <h1 className=" text-2xl font-bold text-[#000000] text-left ">
+              Welcome Back!
+            </h1>
+            <p className="w-full text-sm font-normal text-[#a6a6aa] text-left mt-5">
+              Let’s continue from where you stopped.
+            </p>
+          </div>
+          <Image src={icon} alt="" />
+        </div>
+        <div>
           <input
-            className=" w-[717px] h-[60px] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
+            className=" w-full h-10 mt-10 text-[16px] pl-3 font-normal leading-[24px] text-left border border-[#a6a6aa] rounded-[10px] "
             type={"email"}
             id="email"
             name="email"
-            placeholder="Email"
+            placeholder="Email Address/Phone Number"
           />
         </div>
-        <div className="mt-7">
-          <label>Password</label>
+        <div>
           <input
-            className="w-[717px] h-[60px] text-[16px] bg-[#f8f7fa] pl-3 font-normal leading-[24px] text-left  rounded-[15px] "
-            type={"text"}
-            id="text"
-            name="text"
+            className="w-full h-10 mt-10 text-[16px] pl-3 font-normal leading-[24px] text-left border border-[#a6a6aa] rounded-[10px] "
+            type={"password"}
+            id="password"
+            name="password"
             placeholder="Password"
           />
         </div>
-        <button className="h-[60px] w-[717px] mt-10 rounded-[10px] text-[24px] bg-[#000000] text-[#ffffff] hover:scale-105 duration-500 ">
-          Login
+        <div className="w-full mt-6">
+          <input type={"checkbox"} id="terms" name="terms" />
+          <label
+            className="text-sm font-normal text-left text-[#a6a6aa] "
+            htmlFor="terms"
+          >
+            Remember Me
+          </label>
+        </div>
+        <button
+          onClick={handleSubmit}
+          className="h-10 w-full mt-5 rounded-[10px] text-xl bg-[#28a745] text-[#ffffff] hover:scale-105 duration-500 "
+        >
+          Sign Up
         </button>
-        <p className=" h-[24px] w-full mt-7 text-[16px] font-normal leading-[24px] text-[#3a3a3a] text-left">
-          Forgot your password?
-          <span className="text-[#fdbc1f]">
-            <a href="/">Reset Password</a>
+        <p className="h-[10px] w-full text-base mt-5 font-normal leading-[24px] text-[#a6a6aa] text-center  ">
+          Have an account?{" "}
+          <span className="text-[#28a745]">
+            <a href="/">Sign in</a>
           </span>
         </p>
-        <p className=" h-[24px] w-full mt-7 text-[16px] font-normal leading-[24px] text-[#3a3a3a] text-left  ">
-          Don’t have an account?
-          <span className="text-[#fdbc1f]">
-            <a href="/">Create Account</a>
-          </span>
+        <p className="w-full mt-8 text-[#3a3a3a] text-center underline">
+          Create Account
         </p>
-      </div>
-    </div>
+      </main>
+    </Fragment>
   );
 };
 

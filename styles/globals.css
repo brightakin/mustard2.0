@@ -14,4 +14,32 @@
     margin: 0;
     box-sizing: border-box;
   }
+
+  .container {
+    background-image: url("../Assets/backgroundLady.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .layer {
+    background-color: rgba(40, 167, 69, 0.7);
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .containermobile {
+    background-image: url("../Assets/backgroundladymobile.png");
+    background-repeat: no-repeat;
+    height: 110%;
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .layermobile {
+    background-color: rgba(40, 167, 69, 0.7);
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
 }

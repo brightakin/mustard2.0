@@ -20,7 +20,7 @@ const AppBarMobile = () => {
   return (
     <div className="h-[2rem]">
       <div
-        className={`flex transition-all z-30 justify-between w-full pt-5 px-3 h-[5rem] bg-[#000000] ${
+        className={`flex transition-all z-30 justify-between w-full pt-5 px-3 h-[5rem] bg-[#28a745] ${
           scrolled ? "fixed" : ""
         }`}
       >
