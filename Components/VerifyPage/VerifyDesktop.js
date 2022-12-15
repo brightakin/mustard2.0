@@ -1,7 +1,7 @@
 import Image from "next/image";
 import icon from "../../Assets/icon.png";
 import React, { Component, Fragment, useState } from "react";
-import OtpInput from "react-otp-input";
+import OtpInput from "react18-otp-input";
 import { useRouter } from "next/router";
 
 export default function VerifyMobile() {
