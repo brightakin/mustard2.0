@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import navLogo from "../../Assets/navlogo.png";
+import Image from "next/image";
 
 const AppBarDesktop = () => {
   const router = useRouter();
@@ -28,20 +30,24 @@ const AppBarDesktop = () => {
   return (
     <div className="h-[80px] w-full">
       <div
-        className={`h-[80px] flex justify-around gap-[5rem] pr-10 transition-all ease-in-out delay-1000 z-30 w-full bg-[#28a745] ${
+        className={`h-[80px] flex justify-around gap-[9rem] pr-10 transition-all ease-in-out delay-1000 z-30 w-full bg-[#28a745] ${
           scrolled ? "fixed" : ""
         }`}
       >
-        <div></div>
+        <Image
+          className="w-[10rem] h-[2rem] mt-5"
+          src={navLogo}
+          alt="navlogo"
+        />
         <ul className="flex mt-5 ml-[7rem]">
           <li className="  h-[34px] w-[110px] text-[#f8f7fa] text-[16px] font-bold leading-[32px] text-center ">
-            <a href="/">Tools</a>
+            <a href="/">Features</a>
           </li>
           <li className=" h-[34px] w-[110px] text-[#f8f7fa] text-[16px] font-bold leading-[32px] text-center ">
-            <a href="/">Resources</a>
+            <a href="/">Company</a>
           </li>
           <li className=" h-[34px] w-[110px] text-[#f8f7fa] text-[16px] font-bold leading-[32px] text-center ">
-            <a href="/">Pricing</a>
+            <a href="/">Help</a>
           </li>
         </ul>
         <div className=" mt-3 gap-5">

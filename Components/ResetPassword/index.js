@@ -1,13 +1,13 @@
 import { useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import BalanceHistoryDesktop from "./ResetPasswordDesktop";
-import BalanceHistoryMobile from "./ResetPasswordMobile";
+import ResetPasswordDesktop from "./ResetPasswordDesktop";
+import ResetPasswordMobile from "./ResetPasswordMobile";
 
-const BalanceHistory = () => {
+const ResetPassword = () => {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down("md"));
 
-  return <>{matches ? <BalanceHistoryMobile /> : <BalanceHistoryDesktop />}</>;
+  return <>{matches ? <ResetPasswordMobile /> : <ResetPasswordDesktop />}</>;
 };
 
-export default BalanceHistory;
+export default ResetPassword;

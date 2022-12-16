@@ -22,11 +22,11 @@ const HomePageMobile = () => {
 
   return (
     <Fragment>
-      <div className="w-full h-[100vh] text-center sm:h-full px-6 bg-[#28a745]">
-        <h1 className="text-[#f8f7fa] w-full mt-[3rem] h-16 text-4xl sm:text-7xl font-bold text-center leading-[32px]">
+      <div className="w-full h-[100vh] text-center sm:h-full px-6 py-[4rem] bg-[#28a745]">
+        <h1 className="text-[#f8f7fa] w-full h-16 text-4xl sm:text-7xl font-bold text-center leading-[32px]">
           Take Control of your money with Mustard!
         </h1>
-        <p className=" h-8 w-full text-[#f8f7fa] mt-8 sm:mt-[12rem] text-2xl sm:text-4xl text-center leading-[30px]">
+        <p className=" h-8 w-full text-[#f8f7fa] mt-14 sm:mt-[12rem] text-2xl sm:text-4xl text-center leading-[30px]">
           We’re here to help you get the best out of your money, no strings
           attached.
         </p>
@@ -76,7 +76,7 @@ const HomePageMobile = () => {
         <p className="w-full h-10 font-bold sm:text-6xl text-3xl mt-10 text-center text-[#28a745]">
           You can make your money work when you In tangible Assets.
         </p>
-        <p className="mt-[6rem] sm:mt-[11rem] text-center text-lg sm:text-3xl text-[#3a3a3a]">
+        <p className="mt-[8rem] sm:mt-[11rem] text-center text-lg sm:text-3xl text-[#3a3a3a]">
           Mustard uses the highest level of internet security and it is
           protected by Comodo SSL certificate with end-to-end data encryption to
           completely protect your data.
@@ -166,60 +166,60 @@ const HomePageMobile = () => {
         </div>
         <div className="flex justify-between mt-5 sm:mt-10">
           <div>
-            <p className="h-10 w-full text-2xl text-left text-[#28a745] font-bold ">
+            <p className="h-10 w-full text-base text-left text-[#28a745] font-bold ">
               Features
             </p>
-            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+            <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
               Dollar Card
             </p>
-            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+            <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
               Save
             </p>
-            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+            <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
               Invest
             </p>
           </div>
           <div>
-            <p className="h-[43px] w-full text-2xl text-left text-[#28a745] font-bold ">
+            <p className="h-[43px] w-full text-base text-left text-[#28a745] font-bold ">
               Company
             </p>
-            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+            <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
               Blog
             </p>
-            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+            <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
               Join Our Team
             </p>
-            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+            <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
               About Us
             </p>
           </div>
         </div>
         <div className="flex justify-between mt-5">
           <div>
-            <p className="h-[43px] w-full text-2xl text-left text-[#28a745] font-bold ">
+            <p className="h-[43px] w-full text-base text-left text-[#28a745] font-bold ">
               Help
             </p>
-            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+            <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
               Get help
             </p>
-            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+            <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
               FAQs
             </p>{" "}
-            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+            <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
               <Link href="/contactus">Contact us</Link>
             </p>
           </div>
           <div>
-            <p className="h-[43px] w-full text-2xl text-left text-[#28a745] font-bold ">
+            <p className="h-[43px] w-full text-base text-left text-[#28a745] font-bold ">
               Transparency
             </p>
-            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+            <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
               Terms & Condition
             </p>
-            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+            <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
               Privacy policy
             </p>
-            <p className="h-10 w-full text-2xl text-left text-[#3a3a3a] font-bold ">
+            <p className="h-10 w-full text-base text-left text-[#3a3a3a] font-bold ">
               Investment policy
             </p>
           </div>
