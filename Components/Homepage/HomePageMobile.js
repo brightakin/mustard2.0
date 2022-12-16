@@ -32,7 +32,7 @@ const HomePageMobile = () => {
         </p>
         <button
           onClick={handleRegister}
-          className="w-52 sm:w-72 h-14 sm:h-24 rounded-xl mt-[7rem] hover:scale-105 duration-500 text-[#28a745] text-xl sm:text-3xl font-semibold bg-[#f8f7fa]"
+          className="w-52 sm:w-72 h-14 sm:h-24 rounded-xl mt-[5rem] hover:scale-105 duration-500 text-[#28a745] text-xl sm:text-3xl font-semibold bg-[#f8f7fa]"
         >
           Create an Account
         </button>
