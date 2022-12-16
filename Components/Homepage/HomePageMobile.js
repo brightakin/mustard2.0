@@ -32,11 +32,11 @@ const HomePageMobile = () => {
         </p>
         <button
           onClick={handleRegister}
-          className="w-52 sm:w-72 h-14 sm:h-24 rounded-xl mt-[8rem] hover:scale-105 duration-500 text-[#28a745] text-xl sm:text-3xl font-semibold bg-[#f8f7fa]"
+          className="w-52 sm:w-72 h-14 sm:h-24 rounded-xl mt-[7rem] hover:scale-105 duration-500 text-[#28a745] text-xl sm:text-3xl font-semibold bg-[#f8f7fa]"
         >
           Create an Account
         </button>
-        <Image className="w-full" src={homePhoneMobile} alt="homephone" />
+        <Image className="sm:w-full" src={homePhoneMobile} alt="homephone" />
       </div>
       <div className="w-full pt-6 px-10 sm:px-20 h-[140rem] sm:h-[240rem] bg-[#f8f7fa]">
         <p className="w-full h-10 font-bold sm:text-6xl text-3xl mt-5 text-center text-[#28a745]">
